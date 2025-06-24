@@ -26,8 +26,8 @@ body {
 }
 
 textarea {
-    width: 70%;
-    height: 90vh;
+    width: 77%;
+    height: 40vh;
     scrollbar-width: none;
     /*overflow: hidden;*/
     resize: none;
@@ -41,32 +41,40 @@ textarea {
     font-size: 20px;
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 40px;
+	margin-top: 40px;
     margin-bottom: 40px;
     z-index: 2;
 }
 
 .tekstikentta_taustalla {
     /*display: inline;*/
+	width: 90%;
     position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .tekstikentta_taustalla img {
-    position: absolute;
-    width: 80%;
+	/*position: absolute;*/
+    width: 50%;
     border: none;
+	margin-left: 0%;
+    margin-right: 0%;
 }
 
 .tekstikentta_taustalla .paperin_alku_class {
-    left: 10%;
-    top: 0%;
+	width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+	top: 0%;
     /*position: absolute;
     width: 100%;*/
 }
 
 .tekstikentta_taustalla .paperin_loppu_class {
-    left: 10%;
-    top: 80vh;
+	margin-left: auto;
+    margin-right: auto;
+    top: 100%;
     /*position: absolute;
     margin-top: 500px;
     width: 100%;
@@ -78,26 +86,27 @@ textarea {
     vertical-align: top;
     position: relative;
     display: inline;
-    top: 10vh;
+    top: 100%;
 }
 
 .suorakulmio {
-    height: 50vh;
-    top: 30vh;
-    background-color: #F4D388;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: -3px;
+    height: 100%;
+    background-color: #FFFFFF;
     position: absolute;
-    width: 77.4%;
+    width: 100%;
     border: none;
-    left: 11.3%;
 }
-
+/*
 hr {
     display: block;
     max-width: 80%;
     border: 1px solid white;
     border-radius: 5px;
 }
-
+*/
 .container {
     width: 100%;
     height: 300vh;
@@ -127,9 +136,15 @@ hr {
 	margin-bottom: 10%;
 }
 
+/* Käännetään kuvia satunnaisesti */
+#teipattu_kuva1{ rotate: 2deg; }
+#teippi1{ rotate: 2deg; }
+#teipattu_kuva2{ rotate: -4deg; }
+#teippi2{ rotate: -4deg; }
+
 .leftpane .kuva{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 92%;
+    max-height: 92%;
 	margin-top: 4%;
 	margin-bottom: 4%;
     margin-left: 4%;
@@ -139,10 +154,10 @@ hr {
 
 .leftpane .tehoste {
     position: absolute;
-    left: 0%;
-    top: 0%;
-    max-width: 108%;
-    max-height: 108%;
+    left: 1%;
+    top: 1%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .leftpane h1 {
