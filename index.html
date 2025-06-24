@@ -71,6 +71,10 @@
             }                
         }
     };
+	document.open = function() {
+		background_img = curDiv.getAttribute("data-bg");
+        document.body.style.background = background_img;
+	}
     </script>
 </body>
 </html>
