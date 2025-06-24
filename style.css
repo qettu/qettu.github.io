@@ -10,10 +10,11 @@
     src: url('files/PAPYRUS.ttf');
 }
 
+
 body {
-  background-image: url("images/hallway.jpg");
+  background: url(images/hallway.jpg) no-repeat center center fixed;
   background-attachment: fixed !important;
-  background-size: 100% !important;
+  background-size: cover center !important;
 
   /* Animaation kesto */
   -webkit-transition: background 0.0s;
@@ -121,19 +122,26 @@ hr {
   position: relative;
 }
 
+#leftImages_16_9 {
+	position: relative;
+}
+
 .leftpane .kuva{
-    max-width: 80%;
-    max-height: 30vh;
-    margin-left: 2%;
+    max-width: 100%;
+    max-height: 100%;
+	margin-top: 4%;
+	margin-bottom: 4%;
+    margin-left: 4%;
+	margin-right: 4%;
     box-shadow: 6px 6px 20px black;
 }
 
 .leftpane .tehoste {
     position: absolute;
-    left: 4%;
-    top: 8%;
-    max-width: 95%;
-    max-height: 35vh;
+    left: 0%;
+    top: 0%;
+    max-width: 108%;
+    max-height: 108%;
 }
 
 .leftpane h1 {
