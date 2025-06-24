@@ -9,8 +9,68 @@
 </head>
 
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
 
+    <div style="position:fixed" id="test"></div>
+    <center>
+
+
+        <alue id="part1" data-bg=url("https://github.com/qettu/qettu.github.io/blob/main/hallway.jpg")>
+            <div class="container">
+                <div class="toppane">
+                    <h1>Tervetuloa</h1>
+                </div>
+
+                <div class="d-flex">
+                    <div class="leftpane">
+                        <h1>Vasen puoli</h1>
+                        <img class="kuva" src="https://github.com/qettu/qettu.github.io/blob/main/hallway.jpg">
+                        <img class="tehoste" src="files/teippi_16_9.png">
+                    </div>
+
+                    <div class="middlepane">
+                        <h1>Forest fog</h1>
+                        <div class="tekstikentta_taustalla">
+                            <img class="paperin_alku_class" src="files/paperin_alku.png">
+                            <div class="suorakulmio"></div>
+                            <textarea spellcheck="false" id="tekstikentta_loppu" name="Tekstikenttä">Tekstikenttä</textarea>
+                            <img class="paperin_loppu_class" src="files/paperin_loppu.png">
+                        </div>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div>
+
+                    <div class="rightpane">
+                        <h1>Oikea puoli</h1>
+                    </div>
+                </div>
+            </div>
+        </alue>
+
+
+    </center>
+
+
+    <script>
+    var test = document.getElementById("test");
+
+    document.onscroll = function() {
+
+        scrollTop = window.pageYOffset;
+        test.innerHTML = scrollTop;
+    
+        allDivs = document.getElementsByTagName('alue');
+
+        for( i=0; i< allDivs.length; i++ )
+        {
+    	    curDiv = allDivs[i];        
+            heightBefore = 0;
+        
+            if (scrollTop > curDiv.offsetTop - heightBefore){
+        	    background_img = curDiv.getAttribute("data-bg");
+          	    document.body.style.background = background_img;
+            }                
+        }
+    };
+    </script>
+</body>
 </html>
