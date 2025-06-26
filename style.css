@@ -1,5 +1,6 @@
 body {
   background: url(images/hallway.jpg) no-repeat center center fixed;
+  background-position: initial center center;
   background-attachment: fixed !important;
   background-size: cover center !important;
 
