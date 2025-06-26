@@ -1,37 +1,46 @@
-body {
-  background: url(images/hallway.jpg) no-repeat center center fixed;
-  background-position: initial center center;
-  background-attachment: fixed !important;
-  background-size: cover center !important;
 
-  /* Taustakuvan animaation kesto */
-  -webkit-transition: background 0.0s;
-  -moz-transition: background 0.0s;
-  -ms-transition: background 0.0s;
-  -o-transition: background 0.0s;
-  transition: background 0.0s;
-  margin: 0 !important;
+body {
+	/*background-image: url(images/hallway.jpg) no-repeat center center fixed;*/
+	background-image: url(images/hallway.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed !important;
+	background-position: center !important;
+	background-size: cover !important;
+	
+	/*background-position: initial center center;
+	background-attachment: fixed !important;
+	background-size: cover center !important;*/
+
+	/* Taustakuvan animaation kesto */
+	-webkit-transition: background 0.0s;
+	-moz-transition: background 0.0s;
+	-ms-transition: background 0.0s;
+	-o-transition: background 0.0s;
+	transition: background 0.0s;
+	margin: 0 !important;
 }
 
 textarea {
-    scrollbar-width: none;
-    /*overflow: hidden;*/
-    resize: none;
-    background-color: rgba(0,0,0,0);
-    border-color: rgba(0,0,0,0);
-    outline: none;
-    border: none;
-    background: none;
+	scrollbar-width: none;
+	/*overflow: hidden;*/
+	resize: none;
+	background-color: rgba(0,0,0,0);
+	border-color: rgba(0,0,0,0);
+	outline: none;
+	border: none;
+	background: none;
 	color: #000;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+/* ------------------- Tekstikenttä -------------------- */
+
 .tekstikentta_taustalla {
-    /*display: inline;*/
+	/*display: inline;*/
 	width: 90%;
 	height: 100%;
-    position: relative;
+	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -52,45 +61,77 @@ textarea {
 	padding-right: 15%; /* marginaali muistilapun marginaalin kohdalle */
 	margin-right: auto;
 	margin-left: auto;
-    display: inline;
+	display: inline;
 	padding-top: 10.8%;
-    /*margin-top: 9.5%;*/
+	/*margin-top: 9.5%;*/
 	overflow: hidden;
 	font-family: "Pangolin", cursive;
 	font-weight: 400;
 	font-style: normal;
 	line-height: 1.5;
-	height: 70%;
+	height: 50.5%;
 }
 
+/* ----------------------------------------------------- */
+
 hr {
-    display: block;
-    max-width: 80%;
-    border: 1px solid white;
-    border-radius: 5px;
+	display: block;
+	max-width: 80%;
+	border: 1px solid white;
+	border-radius: 5px;
 }
 
 .container {
-    width: 100%;
-    height: 300vh;
-    font-size: 16px;
-    font-family: 'Verdana', sans-serif;
-    text-shadow: 2px 2px 8px black;
+	width: 100%;
+	height: 150vh;
+	/*
+	font-size: 16px;
+	font-family: 'Verdana', sans-serif;
+	text-shadow: 2px 2px 8px black;
+	*/
+	font-family: "Orbitron", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-shadow: 2px 2px 8px black;
+	font-size: 1vw;
 }
 
 .toppane {
-    width: 100%;
-    height: 20vh;
-    color: #fff;
-    font-size: 50px;
-    font-family: 'Old English Text MT', sans-serif;
-    text-shadow: 2px 2px 8px black;
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	font-family: "Orbitron", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-shadow: 2px 2px 8px black;
+	background-color: black;
+	margin-top: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*font-family: 'Old English Text MT', sans-serif;
+	text-shadow: 2px 2px 8px black;*/
+}
+
+.toppane h1 {
+	font-size: 4vw;
+	height: 30vh;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gradient {
+	background-image: linear-gradient(black, rgba(0,0,0,0));
+	height: 100vh;
 }
 
 .leftpane {
-  width: 25%;
-  color: #fff;
-  position: relative;
+	width: 25%;
+	color: #fff;
+	position: relative;
 }
 
 #leftImages_16_9 {
@@ -105,41 +146,44 @@ hr {
 #teippi2{ rotate: -4deg; }
 
 .leftpane .kuva{
-    max-width: 92%;
-    max-height: 92%;
+	max-width: 80%;
+	max-height: 80%;
 	margin-top: 4%;
 	margin-bottom: 4%;
-    margin-left: 4%;
+	margin-left: 4%;
 	margin-right: 4%;
-    box-shadow: 6px 6px 20px black;
+	box-shadow: 6px 6px 20px black;
 }
 
 .leftpane .tehoste {
-    position: absolute;
-    left: 1%;
-    top: 1%;
-    max-width: 100%;
-    max-height: 100%;
+	position: absolute;
+	left: 5%;
+	top: 3%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .leftpane h1 {
-    margin-bottom: 10%;
+	margin-bottom: 10%;
 }
 
 .middlepane {
-  width: 50%;
-  /*height: 100vh;*/
-  color: #fff;
+	width: 36%;
+	/*height: 100vh;*/
+	color: #fff;
+	margin-left: 7%;
+	margin-right: 7%;
 }
 
 .rightpane {
-  width: 25%;
-  /*height: 100vh;*/
-  color: #fff;
+	width: 25%;
+	/*height: 100vh;*/
+	color: #fff;
 }
 
 .d-flex {
-  display: flex;
-  width: 100%;
-  aspect-ratio: 16/11;
+	margin-top: 0px;
+	display: flex;
+	width: 100%;
+	aspect-ratio: 16/11;
 }
