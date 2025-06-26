@@ -1,22 +1,9 @@
-@font-face {
-    font-family: 'Old English Text MT';
-    src: url('files/OLDENGL.ttf');
-    /*Toimii vain, jos tässä kohtaa ei määrittele montaa fonttia*/
-    /*samalla, ja tiedostohakemisto ja nimi ovat täsmälleen oikein. */
-}
-
-@font-face {
-    font-family: 'Papyrus';
-    src: url('files/PAPYRUS.ttf');
-}
-
-
 body {
   background: url(images/hallway.jpg) no-repeat center center fixed;
   background-attachment: fixed !important;
   background-size: cover center !important;
 
-  /* Animaation kesto */
+  /* Taustakuvan animaation kesto */
   -webkit-transition: background 0.0s;
   -moz-transition: background 0.0s;
   -ms-transition: background 0.0s;
@@ -26,8 +13,6 @@ body {
 }
 
 textarea {
-    width: 77%;
-    height: 40vh;
     scrollbar-width: none;
     /*overflow: hidden;*/
     resize: none;
@@ -36,77 +21,54 @@ textarea {
     outline: none;
     border: none;
     background: none;
-    font-family: 'Papyrus', sans-serif;
-    /*text-shadow: 2px 2px 8px black;*/
-    font-size: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-	margin-top: 40px;
-    margin-bottom: 40px;
-    z-index: 2;
+	color: #000;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .tekstikentta_taustalla {
     /*display: inline;*/
 	width: 90%;
+	height: 100%;
     position: relative;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .tekstikentta_taustalla img {
-	/*position: absolute;*/
-    width: 50%;
-    border: none;
-	margin-left: 0%;
-    margin-right: 0%;
-}
-
-.tekstikentta_taustalla .paperin_alku_class {
+	display: block;
+	position: absolute;
 	width: 100%;
-    margin-left: 0%;
-    margin-right: 0%;
-	top: 0%;
-    /*position: absolute;
-    width: 100%;*/
-}
-
-.tekstikentta_taustalla .paperin_loppu_class {
+	border: none;
 	margin-left: auto;
-    margin-right: auto;
-    top: 100%;
-    /*position: absolute;
-    margin-top: 500px;
-    width: 100%;
-    margin-top: 70vh;
-    display: flex;*/
+	margin-right: auto;
+	z-index: -1;
 }
 
 .tekstikentta_taustalla textarea {
-    vertical-align: top;
-    position: relative;
+	position: relative;
+	width: 77%;
+	padding-right: 15%; /* marginaali muistilapun marginaalin kohdalle */
+	margin-right: auto;
+	margin-left: auto;
     display: inline;
-    top: 100%;
+	padding-top: 10.8%;
+    /*margin-top: 9.5%;*/
+	overflow: hidden;
+	font-family: "Pangolin", cursive;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.5;
+	height: 70%;
 }
 
-.suorakulmio {
-	margin-left: auto;
-    margin-right: auto;
-	margin-top: -4px;
-    height: 100%;
-    background-color: #FFFFFF;
-    position: absolute;
-    width: 100%;
-    border: none;
-}
-/*
 hr {
     display: block;
     max-width: 80%;
     border: 1px solid white;
     border-radius: 5px;
 }
-*/
+
 .container {
     width: 100%;
     height: 300vh;
@@ -126,7 +88,7 @@ hr {
 
 .leftpane {
   width: 25%;
-  height: 100vh;
+  /*height: 100vh;*/
   color: #fff;
   position: relative;
 }
@@ -166,16 +128,18 @@ hr {
 
 .middlepane {
   width: 50%;
-  height: 100vh;
+  /*height: 100vh;*/
   color: #fff;
 }
 
 .rightpane {
   width: 25%;
-  height: 100vh;
+  /*height: 100vh;*/
   color: #fff;
 }
 
 .d-flex {
   display: flex;
+  width: 100%;
+  aspect-ratio: 16/11;
 }

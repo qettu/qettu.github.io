@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 
 <head>
-<link rel="stylesheet" href="style.css">
-<title>Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
 	
-	<!--<div style="position:fixed" id="test"></div>-->
+	<div style="position:fixed" id="test"></div>
 	<center>
 
 
@@ -38,10 +41,11 @@
 
 					<div class="middlepane">
 						<h1>Center</h1>
-						<div class="tekstikentta_taustalla">
-							<img class="paperin_alku_class" src="images/muistion_reuna.png">
-							<div class="suorakulmio"></div>
-							<textarea spellcheck="false" id="tekstikentta_loppu" name="Tekstikenttä">Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä. </textarea>
+						<div class="tekstikentta_taustalla" id="myDiv">
+							<!--<img class="paperin_alku_class" src="images/muistio.png">-->
+							<img class="muistiopaperi" id="muistiopaperi1" src="images/muistio.png">
+							<!--<div class="suorakulmio"></div>-->
+							<textarea spellcheck="false" id="tekstialue" readonly="readonly">Teksti näyttää tältä välilyöntien kanssa. Rivittämätön teksti: Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä.Tekstinäyttäätältä. </textarea>
 						</div>
 						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -54,31 +58,48 @@
 			</div>
 		</alue>
 
-
+	<h1>!!!!</h1>
 	</center>
 
 
 	<script>
-	/*var test = document.getElementById("test");*/
-
-	document.onscroll = function() {
-
-		scrollTop = window.pageYOffset;
-		/*test.innerHTML = scrollTop;*/
-	
-		allDivs = document.getElementsByTagName('alue');
-
-		for( i=0; i< allDivs.length; i++ )
-		{
-			curDiv = allDivs[i];		
-			heightBefore = 0;
+		var test = document.getElementById("test");
 		
-			if (scrollTop > curDiv.offsetTop - heightBefore){
-				background_img = curDiv.getAttribute("data-bg");
-		  		document.body.style.background = background_img no-repeat center center fixed;
-			}				
+		var paperielementti = document.getElementById("muistiopaperi1");
+		var tekstielementti = document.getElementById('tekstialue');
+		
+		// Fontti säädetään muistilapun rivien mukaan (1.5 rivivälillä täytyy jakaa 33.267 muistilappukuva)
+		function adjustFontSize() {
+			const windowWidth = window.innerWidth;
+			tekstielementti.style.fontSize = muistiopaperi1.offsetHeight/33.267+'px';
 		}
-	};
+		// Säädetään fontti jo alussa oikein
+		adjustFontSize();
+		// Säädetään fontti koon muuttuessa
+		window.addEventListener('resize', adjustFontSize);
+
+
+		// Osioiden taustakuvan muuttuminen rullatessa
+		document.onscroll = function() {
+
+			scrollTop = window.pageYOffset;
+			test.innerHTML = scrollTop;
+		
+			allDivs = document.getElementsByTagName('alue');
+
+			for( i=0; i< allDivs.length; i++ )
+			{
+				curDiv = allDivs[i];		
+				heightBefore = 0;
+			
+				if (scrollTop > curDiv.offsetTop - heightBefore){
+					background_img = curDiv.getAttribute("data-bg");
+					document.body.style.background = "background_img no-repeat center center fixed";
+				}				
+			}
+		};
+	
 	</script>
+	<p>112120</p>
 </body>
 </html>
