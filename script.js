@@ -1,5 +1,4 @@
-var test = document.getElementById("test");
-
+var test = document.getElementById("test"); /*TODO: remove*/
 var paperielementti = document.getElementById("muistiopaperi1");
 var kaikkiTekstielementit = document.getElementsByClassName('tekstialue');
 
@@ -15,9 +14,7 @@ function adjustFontSize() {
 
 // Säädetään fontti jo alussa oikein
 adjustFontSize();
-// Säädetään fontti koon muuttuessa
 window.addEventListener('resize', adjustFontSize);
-
 
 // Osioiden taustakuvan muuttuminen rullatessa
 document.onscroll = function() {
@@ -37,7 +34,4 @@ document.onscroll = function() {
 			document.body.style.background = "background_img no-repeat center center fixed";
 		}				
 	}
-	
-	// Fontti ei aina lataudu, kun muistilappu ei näy alussa. Pitäisi ehkä päivittää rullatessa
-	adjustFontSize();
 };

@@ -1,4 +1,3 @@
-
 body {
 	/*background-image: url(images/hallway.jpg) no-repeat center center fixed;*/
 	background-image: url(images/hallway.jpg);
@@ -13,11 +12,11 @@ body {
 	-o-transition: background 0.0s;
 	transition: background 0.0s;
 	margin: 0 !important;
+	min-height: 100%;
 }
 
 textarea {
 	scrollbar-width: none;
-	/*overflow: hidden;*/
 	resize: none;
 	background-color: rgba(0,0,0,0);
 	border-color: rgba(0,0,0,0);
@@ -25,14 +24,13 @@ textarea {
 	border: none;
 	background: none;
 	color: #000;
+	
 	margin-left: auto;
 	margin-right: auto;
 }
 
 /* ------------------- Tekstikenttä -------------------- */
-
 .tekstikentta_taustalla {
-	/*display: inline;*/
 	width: 90%;
 	height: 100%;
 	position: relative;
@@ -41,67 +39,77 @@ textarea {
 }
 
 .tekstikentta_taustalla img {
+	border: none;
+	z-index: -1;
+	
+	margin-left: auto;
+	margin-right: auto;
 	display: block;
 	position: absolute;
 	width: 100%;
-	border: none;
-	margin-left: auto;
-	margin-right: auto;
-	z-index: -1;
 }
 
 .tekstikentta_taustalla textarea {
-	position: relative;
-	width: 77%;
-	padding-right: 15%; /* marginaali muistilapun marginaalin kohdalle */
-	margin-right: auto;
-	margin-left: auto;
-	display: inline;
-	padding-top: 10.8%;
+	scrollbar-width: none;
+	resize: none;
+	background-color: rgba(0,0,0,0);
+	border-color: rgba(0,0,0,0);
+	outline: none;
+	border: none;
+	background: none;
+	color: #000;
 	overflow: hidden;
 	font-family: "Pangolin", cursive;
 	font-weight: 400;
 	font-style: normal;
 	line-height: 1.5;
+	
+	display: inline;
 	height: 50.5%;
+	width: 77%;
+	position: relative;
+	padding-top: 10.8%;
+	padding-right: 15%; /* marginaali muistilapun marginaalin kohdalle */
+	margin-right: auto;
+	margin-left: auto;
 }
-
 /* ----------------------------------------------------- */
 
 hr {
-	display: block;
-	max-width: 80%;
 	border: 1px solid white;
 	border-radius: 5px;
+	
+	display: block;
+	max-width: 80%;
 }
 
 .container {
-	width: 100%;
-	height: 150vh;
 	font-family: "Orbitron", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	text-shadow: 2px 2px 8px black;
 	font-size: 1vw;
+	width: 100%;
+	height: 150vh;
 }
 
 /* ---------------------- Otsikkoruutu ----------------- */
-
 .toppane {
-	width: 100%;
-	height: 100vh;
 	color: #fff;
 	font-family: "Orbitron", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	text-shadow: 2px 2px 8px black;
 	background-color: black;
-	margin-top: 0px;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
+	width: 100%;
+	height: 100vh;	
+	margin-top: 0px;
 }
 
 @keyframes fly_in_top {
@@ -111,50 +119,75 @@ hr {
 
 .toppane h1 {
 	font-size: 5vw;
-	margin-top: 40vh;
-	margin-bottom: 0px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	text-align: center;
 	text-shadow: 0px 0px 10px #0ff;
+	
 	animation-name: fly_in_top;
 	animation-duration: 2s;
 	animation-delay: 0s;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40vh;
+	margin-bottom: 0px;
 }
 
+/* ------------ animoitu nuoli aloitusruudussa ------------- */
 @keyframes up_and_down{
 	0%		{margin-bottom: 5%;}
-	80%		{margin-bottom: 2%;}
+	85%		{margin-bottom: 2%;}
 	100%	{margin-bottom: 5%;}
 }
 
 .circle {
-	min-height: 40px;
-	min-width: 40px;
-	height: 6vh;
-	width: 6vh;
 	background-color: #fff;
 	border-radius: 50%;
-	margin-top: auto;
+
 	animation-name: up_and_down;
 	animation-duration: 3s;
 	animation-delay: 0s;
 	animation-iteration-count: infinite;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 6vh;
+	width: 6vh;
+	margin-top: auto;
 }
+
+.nuoli {
+	width: 60%;
+	margin-top: 30%;
+}
+
 
 /* ----------------------------------------------------- */
 
 .gradient {
 	background-image: linear-gradient(black, rgba(0,0,0,0));
+	
 	min-height: 50px;
 	max-height: 100vw;
 	height: 50vh;
 }
+/* ----------------------------------------------------- */
+
+
+/* --------------------- Tekstiosiot ------------------- */
+.d-flex {
+	display: flex;
+	width: 100%;
+	aspect-ratio: 16/11;
+	margin-top: 0px;
+}
 
 .leftpane {
-	width: 25%;
 	color: #fff;
+	
+	width: 25%;
 	position: relative;
 }
 
@@ -170,13 +203,14 @@ hr {
 #teippi2{ rotate: -4deg; }
 
 .leftpane .kuva{
+	box-shadow: 6px 6px 20px black;
+	
 	max-width: 80%;
 	max-height: 80%;
 	margin-top: 4%;
 	margin-bottom: 4%;
 	margin-left: 4%;
 	margin-right: 4%;
-	box-shadow: 6px 6px 20px black;
 }
 
 .leftpane .tehoste {
@@ -192,20 +226,16 @@ hr {
 }
 
 .middlepane {
-	width: 36%;
 	color: #fff;
+	
+	width: 36%;
 	margin-left: 7%;
 	margin-right: 7%;
 }
 
 .rightpane {
-	width: 25%;
 	color: #fff;
+	
+	width: 25%;
 }
-
-.d-flex {
-	margin-top: 0px;
-	display: flex;
-	width: 100%;
-	aspect-ratio: 16/11;
-}
+/* ----------------------------------------------------- */
