@@ -24,9 +24,7 @@ ul{
 	font-size: 18px;
 	
 	list-style-type: none;
-	overflow: hidden;
 	background-color: #222;
-	
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -40,21 +38,54 @@ li{
 	float: left;
 }
 
-li a{
-	display: block;
+li a, .dropbutton{
+	display: inline-block;
 	color: #0aa;
 	text-align: center;
 	text-decoration: none;
-	padding: 1vh 1.8vw;
+	padding: 1vh 1.8vw; /* Kopioi sama padding osioon .dropdown-content a{ */
 }
 
 li a:hover:not(.aktiivinen_sivu){
 	background-color: #111;
 }
 
+li a:hover, .dropdown:hover .dropbutton {
+	background-color: #111;
+}
+
+li.dropdown{
+	display: inline-block;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #222;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+	z-index: 6;
+}
+
+.dropdown-content a{
+	color: #0aa;
+	padding: 1vh 1.8vw; /* Kopioi sama padding osioon li a, .dropbutton{*/
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a: hover {
+	background-color: #111;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
 .aktiivinen_sivu{
-	background-color: #0cc;
-	color: #222;
+	background-color: #133;
+	color: #0aa;
 }
 /* ----------------------------------------------------- */
 
