@@ -13,22 +13,36 @@
 
 
 <body>
+	<!-- Valikko -->
+	<ul>
+		<li><a class="aktiivinen_sivu" href="#part0">Koti</a></li>
+		<li><a href="#part1">Osa 1</a></li>
+		<li><a href="#part2">Osa 2</a></li>
+	</ul>
+	
+	
+	
+	<!-- sivu -->
 	<div style="position:fixed" id="test"></div>
 	<center>
-
-		<alue id="part1" data-bg=url("images/hallway.jpg")>
-			<div class="container">
+		<div class="container">
+		
+			<alue id="part0" data-bg=url("images/hallway.jpg")>
 			
 				<div class="toppane">
 					<h1>Tervetuloa!</h1>
 					<div class="circle">
-						<img class="nuoli" src="images/nuoli.png", id="animoitu_nuoli">
+						<a href="#part1">
+							<img class="nuoli" src="images/nuoli.png", id="animoitu_nuoli">
+						</a>
 					</div>
 				</div>
 				
 				<div class="gradient">
 				</div>
+			</alue>
 
+			<alue id="part1" data-bg=url("images/hallway.jpg")>		
 				<div class="d-flex">
 				
 					<div class="leftpane">
@@ -60,8 +74,9 @@
 					</div>
 					
 				</div>
+			</alue>
 				
-				
+			<alue id="part2" data-bg=url("images/hallway.jpg")>
 				<div class="d-flex">
 				
 					<div class="leftpane">
@@ -92,11 +107,10 @@
 						<h1>Right</h1>
 					</div>
 					
-				</div>
-				
-			</div>
-		</alue>
-
+				</div>	
+			</alue>
+			
+		</div>
 	</center>
 
 	<script src="script.js"></script> 

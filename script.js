@@ -32,6 +32,6 @@ document.onscroll = function() {
 		if (scrollTop > curDiv.offsetTop - heightBefore){
 			background_img = curDiv.getAttribute("data-bg");
 			document.body.style.background = "background_img no-repeat center center fixed";
-		}				
+		}
 	}
 };

@@ -15,6 +15,49 @@ body {
 	min-height: 100%;
 }
 
+/* ------------------- Valikko ------------------------- */
+ul{
+	font-family: "Orbitron", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-shadow: 2px 2px 8px black;
+	font-size: 18px;
+	
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #222;
+	
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	
+	z-index: 5;
+}
+
+li{
+	float: left;
+}
+
+li a{
+	display: block;
+	color: #0aa;
+	text-align: center;
+	text-decoration: none;
+	padding: 1vh 1.8vw;
+}
+
+li a:hover:not(.aktiivinen_sivu){
+	background-color: #111;
+}
+
+.aktiivinen_sivu{
+	background-color: #0cc;
+	color: #222;
+}
+/* ----------------------------------------------------- */
+
 textarea {
 	scrollbar-width: none;
 	resize: none;
@@ -135,9 +178,9 @@ hr {
 
 /* ------------ animoitu nuoli aloitusruudussa ------------- */
 @keyframes up_and_down{
-	0%		{margin-bottom: 5%;}
-	85%		{margin-bottom: 2%;}
-	100%	{margin-bottom: 5%;}
+	0%		{margin-bottom: 6vh;}
+	85%		{margin-bottom: 1vh;}
+	100%	{margin-bottom: 6vh;}
 }
 
 .circle {
@@ -145,7 +188,7 @@ hr {
 	border-radius: 50%;
 
 	animation-name: up_and_down;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-delay: 0s;
 	animation-iteration-count: infinite;
 	
