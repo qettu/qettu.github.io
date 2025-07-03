@@ -31,12 +31,14 @@ ul{
 	margin: 0px;
 	padding: 0px;
 	min-height: 40px;
+	overflow: hidden;
 	
 	z-index: 5;
 }
 
 li{
 	float: left;
+	overflow: hidden;
 }
 
 li a, .dropbutton{
@@ -45,6 +47,8 @@ li a, .dropbutton{
 	text-align: center;
 	text-decoration: none;
 	padding: 1vh 1.8vw; /* Kopioi sama padding osioon .dropdown-content a{ */
+	border: none;
+	outline: none;
 }
 
 li a:hover:not(.aktiivinen_sivu){
@@ -57,6 +61,7 @@ li a:hover, .dropdown:hover .dropbutton {
 
 li.dropdown{
 	display: inline-block;
+	overflow: hidden;
 }
 
 .dropdown-content{
@@ -65,15 +70,22 @@ li.dropdown{
 	background-color: #222;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
-	z-index: 6;
+	z-index: 5;
+	overflow: hidden;
+	border: none;
+	outline: none;
 }
 
 .dropdown-content a{
+	float: none;
 	color: #0aa;
 	padding: 1vh 1.8vw; /* Kopioi sama padding osioon li a, .dropbutton{*/
 	text-decoration: none;
 	display: block;
 	text-align: left;
+	overflow: hidden;
+	border: none;
+	outline: none;
 }
 
 .dropdown-content a: hover {
