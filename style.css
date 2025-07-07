@@ -276,9 +276,19 @@ hr {
 
 .leftpane {
 	color: #fff;
-	
 	width: 25%;
 	position: relative;
+}
+.rightpane {
+	color: #fff;
+	width: 25%;
+	position: relative;
+}
+.leftpane h1 {
+	margin-bottom: 10%;
+}
+.rightpane h1{
+	margin-bottom: 10%;
 }
 
 #leftImages_16_9 {
@@ -308,19 +318,14 @@ hr {
 	max-width: 100%;
 	max-height: 100%;
 }
-.leftpane h1 {
-	margin-bottom: 10%;
-}
 .middlepane {
 	color: #fff;
 	width: 36%;
 	margin-left: 7%;
 	margin-right: 7%;
 }
-.rightpane {
-	color: #fff;
-	width: 25%;
-}
+
+
 /* ----------------------------------------------------- */
 
 /* ------------------- Puhelinversio ------------------- */
