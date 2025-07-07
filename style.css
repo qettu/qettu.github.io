@@ -344,6 +344,9 @@ hr {
 		position: relative;
 		font-size: 16px;
 	}
+	.toppane h1 {
+		font-size: 10vw;
+	}
 	/* TODO: hamburger menu for mobile*/
 }
 /* ----------------------------------------------------- */
