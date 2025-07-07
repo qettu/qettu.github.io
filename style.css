@@ -13,6 +13,7 @@ body {
 	transition: background 0.0s;
 	margin: 0 !important;
 	min-height: 100%;
+	min-width: 100%;
 }
 
 /* ------------------- Valikko ------------------------- */
@@ -159,6 +160,7 @@ textarea {
 	position: relative;
 	padding-top: 10.8%;
 	padding-right: 15%; /* marginaali muistilapun marginaalin kohdalle */
+	padding-bottom: 0%;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -257,7 +259,6 @@ hr {
 
 .gradient {
 	background-image: linear-gradient(black, rgba(0,0,0,0));
-	
 	min-height: 50px;
 	max-height: 100vw;
 	height: 50vh;
@@ -293,7 +294,6 @@ hr {
 
 .leftpane .kuva{
 	box-shadow: 6px 6px 20px black;
-	
 	max-width: 80%;
 	max-height: 80%;
 	margin-top: 4%;
@@ -301,7 +301,6 @@ hr {
 	margin-left: 4%;
 	margin-right: 4%;
 }
-
 .leftpane .tehoste {
 	position: absolute;
 	left: 5%;
@@ -309,22 +308,42 @@ hr {
 	max-width: 100%;
 	max-height: 100%;
 }
-
 .leftpane h1 {
 	margin-bottom: 10%;
 }
-
 .middlepane {
 	color: #fff;
-	
 	width: 36%;
 	margin-left: 7%;
 	margin-right: 7%;
 }
-
 .rightpane {
 	color: #fff;
-	
 	width: 25%;
+}
+/* ----------------------------------------------------- */
+
+/* ------------------- Puhelinversio ------------------- */
+@media screen and (max-width: 800px) {
+	.leftpane, .rightpane, .middlepane {
+		width: 100vw; /* The width is 100%, when the viewport is 800px or smaller */
+		height: 170vw;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.tekstikentta_taustalla {
+		height: 112%;
+	}
+	.d-flex {
+		display: block;
+		position: relative;
+	}
+	.container {
+		position: relative;
+		font-size: 16px;
+	}
+	/* TODO: hamburger menu for mobile*/
 }
 /* ----------------------------------------------------- */
