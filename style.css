@@ -301,6 +301,10 @@ hr {
 #teippi1{ rotate: 2deg; }
 #teipattu_kuva2{ rotate: -4deg; }
 #teippi2{ rotate: -4deg; }
+#teipattu_kuva3{ rotate: 5deg; }
+#teippi2{ rotate: 5deg; }
+#teipattu_kuva4{ rotate: -1deg; }
+#teippi2{ rotate: -1deg; }
 
 .kuva{
 	box-shadow: 6px 6px 20px black;

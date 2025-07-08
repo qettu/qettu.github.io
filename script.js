@@ -18,20 +18,39 @@ window.addEventListener('resize', adjustFontSize);
 
 // Osioiden taustakuvan muuttuminen rullatessa
 document.onscroll = function() {
-
+	
 	scrollTop = window.pageYOffset;
 	test.innerHTML = scrollTop;
-
 	allDivs = document.getElementsByTagName('alue');
-
+	
 	for( i=0; i< allDivs.length; i++ )
 	{
-		curDiv = allDivs[i];		
+		curDiv = allDivs[i];
 		heightBefore = 0;
-	
+		console.log(scrollTop);
+		console.log(curDiv.offsetTop);
+		console.log(heightBefore);
+		console.log(curDiv.offsetTop - heightBefore);
+		
 		if (scrollTop > curDiv.offsetTop - heightBefore){
+			console.log("!!!");
 			background_img = curDiv.getAttribute("data-bg");
-			document.body.style.background = "background_img no-repeat center center fixed";
+			console.log(curDiv.getAttribute("data-bg"));
+			document.body.style.backgroundImage = "background_img";
 		}
 	}
 };
+
+// Tekstien lisääminen tekstialueisiin, koska rivinvaihtoja ei voi lisätä
+// ilman javascriptiä
+function log(text, tekstialue) {
+    var txtArea;
+    txtArea = tekstialue;
+    txtArea.value = text + '\r\n';
+}
+
+tekstialue1 = document.getElementById("tekstialue1");
+tekstialue2 = document.getElementById("tekstialue2");
+
+log("Blenderillä mallinnettu Sopwith F-1 Camel.\n\n - Koko malli on toteutettu alusta asti itse ilman valmiita 3D-malleja tai niiden osia.\n - Myös tekstuurit ovat itse valokuvattuja tai proseduraalisesti luotuja.\n - Projekti on edelleen kesken. Seuraava tavoite on maisema ja animoitu hahmo, joilla olisi mahdollista toteuttaa lyhyt, loppuun asti renderöity ja jälkiprosessoitu lyhytanimaatio.", tekstialue1)
+log("Tekstialue 2", tekstialue2)
