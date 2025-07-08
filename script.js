@@ -12,6 +12,7 @@ function adjustFontSize() {
 	}
 }
 
+
 // Säädetään fontti jo alussa oikein
 adjustFontSize();
 window.addEventListener('resize', adjustFontSize);
@@ -26,31 +27,30 @@ document.onscroll = function() {
 	for( i=0; i< allDivs.length; i++ )
 	{
 		curDiv = allDivs[i];
-		heightBefore = 0;
+		heightBefore = 100;
 		console.log(scrollTop);
 		console.log(curDiv.offsetTop);
 		console.log(heightBefore);
 		console.log(curDiv.offsetTop - heightBefore);
 		
 		if (scrollTop > curDiv.offsetTop - heightBefore){
-			console.log("!!!");
+			console.log("Bg Image change to...");
 			background_img = curDiv.getAttribute("data-bg");
 			console.log(curDiv.getAttribute("data-bg"));
-			document.body.style.backgroundImage = "background_img";
+			document.body.style.backgroundImage = background_img;
 		}
 	}
 };
 
+
 // Tekstien lisääminen tekstialueisiin, koska rivinvaihtoja ei voi lisätä
 // ilman javascriptiä
 function log(text, tekstialue) {
-    var txtArea;
-    txtArea = tekstialue;
-    txtArea.value = text + '\r\n';
+    tekstialue.value = text + '\r\n';
 }
 
 tekstialue1 = document.getElementById("tekstialue1");
 tekstialue2 = document.getElementById("tekstialue2");
 
-log("Blenderillä mallinnettu Sopwith F-1 Camel.\n\n - Koko malli on toteutettu alusta asti itse ilman valmiita 3D-malleja tai niiden osia.\n - Myös tekstuurit ovat itse valokuvattuja tai proseduraalisesti luotuja.\n - Projekti on edelleen kesken. Seuraava tavoite on maisema ja animoitu hahmo, joilla olisi mahdollista toteuttaa lyhyt, loppuun asti renderöity ja jälkiprosessoitu lyhytanimaatio.", tekstialue1)
+log("Blenderillä mallinnettu Sopwith F-1 Camel.\n\n - Koko malli on toteutettu alusta asti itse ilman valmiita 3D-malleja tai niiden osia.\n - Kaikki tekstuurit ovat itse valokuvattuja tai proseduraalisesti luotuja.\n - Projekti on edelleen kesken. Seuraava tavoite on maisema ja animoitu hahmo, joilla olisi mahdollista toteuttaa lyhyt, loppuun asti renderöity ja jälkiprosessoitu lyhytanimaatio.", tekstialue1)
 log("Tekstialue 2", tekstialue2)

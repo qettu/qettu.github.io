@@ -266,6 +266,17 @@ hr {
 /* ----------------------------------------------------- */
 
 
+/* -------------- Tyhjä tila taustakuvia varten -------- */
+.space_for_background {
+	min-height: 100px;
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	display: block;
+}
+/* ----------------------------------------------------- */
+
+
 /* --------------------- Tekstiosiot ------------------- */
 .d-flex {
 	display: flex;
@@ -302,9 +313,9 @@ hr {
 #teipattu_kuva2{ rotate: -4deg; }
 #teippi2{ rotate: -4deg; }
 #teipattu_kuva3{ rotate: 5deg; }
-#teippi2{ rotate: 5deg; }
+#teippi3{ rotate: 5deg; }
 #teipattu_kuva4{ rotate: -1deg; }
-#teippi2{ rotate: -1deg; }
+#teippi4{ rotate: -1deg; }
 
 .kuva{
 	box-shadow: 6px 6px 20px black;
