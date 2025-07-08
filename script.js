@@ -43,6 +43,7 @@ document.onscroll = function() {
 };
 
 
+
 // Tekstien lisääminen tekstialueisiin, koska rivinvaihtoja ei voi lisätä
 // ilman javascriptiä
 function log(text, tekstialue) {
