@@ -1,4 +1,4 @@
-// main
+// toinen sivu
 
 var test = document.getElementById("test"); /*TODO: remove*/
 var paperielementti = document.getElementById("muistiopaperi1");
