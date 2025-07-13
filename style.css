@@ -367,7 +367,7 @@ hr {
 		background-position: center;
 		background-size: 100vw;
 		max-width: 100vw;
-		max-height: 400vw;
+		max-height: 300vw;
 	}
 	.leftpane, .rightpane, .middlepane {
 		width: 100vw;
