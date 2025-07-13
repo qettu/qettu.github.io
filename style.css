@@ -359,19 +359,15 @@ hr {
 
 /* ------------------- Puhelinversio ------------------- */
 @media screen and (max-width: 800px) {
-	.body:after {
-		content:"";
-		position:fixed;
-		top:0;
-		height:100vh;
-		left:0;
-		right:0;
-		z-index:-1;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
+	.body {
+		/*background-image: url(images/hallway.jpg) no-repeat center center fixed;*/
 		background-image: url(images/hallway.jpg);
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center;
+		background-size: 100%;
+		max-width: 100vw;
+		max-height: 100vh;
 	}
 	.leftpane, .rightpane, .middlepane {
 		width: 100vw;
