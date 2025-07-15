@@ -1,2 +1,2 @@
 # qettu.github.io
-Portfolio
+My portfolio and homepage project
