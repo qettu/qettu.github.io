@@ -54,6 +54,8 @@ function log(text, tekstialue) {
 
 tekstialue1 = document.getElementById("tekstialue1");
 tekstialue2 = document.getElementById("tekstialue2");
+tekstialue3 = document.getElementById("tekstialue3");
 
 log("Blenderillä mallinnettu Sopwith F-1 Camel.\n\n - Koko malli on toteutettu alusta asti itse ilman valmiita 3D-malleja tai niiden osia.\n - Kaikki tekstuurit ovat itse valokuvattuja tai proseduraalisesti luotuja.\n - Projekti on edelleen kesken. Seuraava tavoite on maisema ja animoitu hahmo, joilla olisi mahdollista toteuttaa lyhyt, loppuun asti renderöity ja jälkiprosessoitu lyhytanimaatio.", tekstialue1)
 log("Futuristinen käytävä. \n\n Pieni blenderillä tehty 3D-malli, jonka kaikki materiaalit ovat proseduraalisesti toteutettuja. ", tekstialue2)
+log("Olen toteuttanut Vulkanilla ohjelman, joka pystyy lataamaan 3D-malleja .obj-tiedostoista ja liittämään niihin tekstuurin. Ohjelman runko on toteutettu seuraamalla Alexander Overvoorden Vulkan tutoriaalia (https://vulkan-tutorial.com/). Myöhemmin olen lisännyt ohjelmaan Blinn-Phong valaistusmallin ja muutamia muita ominaisuuksia. Pääohjelmassa on yli 3000 riviä C++-koodia (suuri osa kommentteja). Lisäksi ohjelmaan kuuluu GLSL-koodia.", tekstialue3)
