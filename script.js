@@ -21,26 +21,32 @@ window.addEventListener('resize', adjustFontSize);
 
 // Osioiden taustakuvan muuttuminen rullatessa
 document.onscroll = function() {
-	
-	scrollTop = window.pageYOffset;
-	test.innerHTML = scrollTop;
-	allDivs = document.getElementsByTagName('alue');
-	
-	for( i=0; i< allDivs.length; i++ )
-	{
-		curDiv = allDivs[i];
-		heightBefore = 100;
-		console.log(scrollTop);
-		console.log(curDiv.offsetTop);
-		console.log(heightBefore);
-		console.log(curDiv.offsetTop - heightBefore);
+	// Taustakuva vain, jos ruutu on tarpeeksi leveä
+	if (!(window.matchMedia("(max-width: 800px)").matches)){
 		
-		if (scrollTop > curDiv.offsetTop - heightBefore){
-			console.log("Bg Image change to...");
-			background_img = curDiv.getAttribute("data-bg");
-			console.log(curDiv.getAttribute("data-bg"));
-			document.body.style.backgroundImage = background_img;
+		scrollTop = window.pageYOffset;
+		test.innerHTML = scrollTop;
+		allDivs = document.getElementsByTagName('alue');
+		
+		for( i=0; i< allDivs.length; i++ )
+		{
+			curDiv = allDivs[i];
+			heightBefore = 100;
+			//console.log(scrollTop);
+			//console.log(curDiv.offsetTop);
+			//console.log(heightBefore);
+			//console.log(curDiv.offsetTop - heightBefore);
+			
+			if (scrollTop > curDiv.offsetTop - heightBefore){
+				//console.log("Bg Image change to...");
+				background_img = curDiv.getAttribute("data-bg");
+				//console.log(curDiv.getAttribute("data-bg"));
+				document.body.style.backgroundImage = background_img;
+			}
 		}
+	} else {
+		document.body.style.background = "none";
+		document.body.style.backgroundColor = "#111";
 	}
 };
 

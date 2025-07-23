@@ -369,6 +369,14 @@ hr {
 		max-width: 100vw;
 		max-height: 300vw;
 	}
+	/*Puhelimella taustakuvalle ei anneta tilaa, koska sitä ei näytetä*/
+	.space_for_background {
+		min-height: 50px;
+		height: 10vh;
+		min-width: 100px;
+		position: relative;
+		display: block;
+	}
 	.leftpane, .rightpane, .middlepane {
 		width: 100vw;
 		height: 170vw;
