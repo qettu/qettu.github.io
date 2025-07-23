@@ -354,6 +354,12 @@ hr {
 	margin-right: 7%;
 }
 
+.loppu{
+	background-color: #444;
+	width: 100vw;
+	min-height: 100px;
+	height: 60vh;
+}
 
 /* ----------------------------------------------------- */
 
