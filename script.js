@@ -42,6 +42,10 @@ document.onscroll = function() {
 				background_img = curDiv.getAttribute("data-bg");
 				//console.log(curDiv.getAttribute("data-bg"));
 				document.body.style.backgroundImage = background_img;
+				document.body.style.backgroundRepeat = "no-repeat";
+				document.body.style.backgroundAttachment = "fixed";
+				document.body.style.backgroundPosition = "center";
+				document.body.style.backgroundSize = "cover";
 			}
 		}
 	} else {
