@@ -22,7 +22,7 @@ window.addEventListener('resize', adjustFontSize);
 // Osioiden taustakuvan muuttuminen rullatessa
 document.onscroll = function() {
 	// Taustakuva vain, jos ruutu on tarpeeksi leveä
-	if (!(window.matchMedia("(max-width: 800px)").matches)){
+	if (!(window.matchMedia("(max-width: 1000px)").matches)){
 		
 		scrollTop = window.pageYOffset;
 		test.innerHTML = scrollTop;
@@ -52,6 +52,7 @@ document.onscroll = function() {
 		document.body.style.background = "none";
 		document.body.style.backgroundColor = "#222";
 	}
+	adjustFontSize();
 };
 
 

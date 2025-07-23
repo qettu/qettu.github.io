@@ -358,7 +358,7 @@ hr {
 /* ----------------------------------------------------- */
 
 /* ------------------- Puhelinversio ------------------- */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 	.body {
 		/*background-image: url(images/hallway.jpg) no-repeat center center fixed;*/
 		background-image: url(images/hallway.jpg);
