@@ -50,7 +50,7 @@ document.onscroll = function() {
 		}
 	} else {
 		document.body.style.background = "none";
-		document.body.style.backgroundColor = "#111";
+		document.body.style.backgroundColor = "#222";
 	}
 };
 

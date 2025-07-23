@@ -42,7 +42,7 @@ ul{
 li{
 	float: left;
 	overflow: hidden;
-	background-color: #222;
+	background-color: #333;
 }
 
 li a, .dropbutton{
@@ -71,7 +71,7 @@ li.dropdown{
 
 .dropdown-content{
 	display: none;
-	background-color: #222;
+	background-color: #333;
 	min-width: 120px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
 	z-index: 5;
