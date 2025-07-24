@@ -16,6 +16,8 @@ body {
 	-o-transition: background 0.0s;
 	transition: background 0.0s;
 	margin: 0 !important;
+	
+	overflow-x: hidden;
 }
 
 /* ------------------- Valikko ------------------------- */
@@ -298,6 +300,25 @@ hr {
 	aspect-ratio: 16/10;
 	margin-top: 0px;
 }
+.d-flex a{
+	font-family: "Orbitron", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-shadow: 0px 0px 0px #000;
+	font-size: 20px;
+	text-decoration: underline;
+	color: #0ff;
+	
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.d-flex a:hover {
+	color: #099;
+}
+.d-flex a:visited {
+	color: #e5e;
+}
+
 
 .leftpane {
 	color: #fff;
@@ -309,6 +330,7 @@ hr {
 	width: 25%;
 	position: relative;
 }
+
 .leftpane h1 {
 	margin-bottom: 10%;
 }
@@ -322,14 +344,43 @@ hr {
 }
 
 /* Käännetään kuvia satunnaisesti */
-#teipattu_kuva1{ rotate: 2deg; }
-#teippi1{ rotate: 2deg; }
-#teipattu_kuva2{ rotate: -4deg; }
-#teippi2{ rotate: -4deg; }
-#teipattu_kuva3{ rotate: 5deg; }
-#teippi3{ rotate: 5deg; }
-#teipattu_kuva4{ rotate: -1deg; }
-#teippi4{ rotate: -1deg; }
+#teipattu_kuva1_1{ rotate: 4deg; }
+#teippi1_1{ rotate: 4deg; }
+#teipattu_kuva1_2{ rotate: -4deg; }
+#teippi1_2{ rotate: -4deg; }
+#teipattu_kuva1_3{ rotate: 5deg; }
+#teippi1_3{ rotate: 5deg; }
+#teipattu_kuva1_4{ rotate: -1deg; }
+#teippi1_4{ rotate: -1deg; }
+
+#teipattu_kuva2_1{ rotate: 3deg; }
+#teippi2_1{ rotate: 3deg; }
+#teipattu_kuva2_2{ rotate: -3deg; }
+#teippi2_2{ rotate: -3deg; }
+#teipattu_kuva2_3{ rotate: 1deg; }
+#teippi2_3{ rotate: 1deg; }
+#teipattu_kuva2_4{ rotate: -6deg; }
+#teippi2_4{ rotate: -6deg; }
+
+#teipattu_kuva3_1{ rotate: 1deg; }
+#teippi3_1{ rotate: 1deg; }
+#teipattu_kuva3_2{ rotate: 2deg; }
+#teippi3_2{ rotate: 2deg; }
+#teipattu_kuva3_3{ rotate: -2deg; }
+#teippi3_3{ rotate: -2deg; }
+#teipattu_kuva3_4{ rotate: -5deg; }
+#teippi3_4{ rotate: -5deg; }
+
+#teipattu_kuva4_1{ rotate: 4deg; }
+#teippi4_1{ rotate: 4deg; }
+#teipattu_kuva4_2{ rotate: -1deg; }
+#teippi4_2{ rotate: -1deg; }
+#teipattu_kuva4_3{ rotate: 2deg; }
+#teippi4_3{ rotate: 2deg; }
+#teipattu_kuva4_4{ rotate: -2deg; }
+#teippi4_4{ rotate: -2deg; }
+
+
 
 .kuva{
 	box-shadow: 6px 6px 20px black;
@@ -354,11 +405,59 @@ hr {
 	margin-right: 7%;
 }
 
-.loppu{
+.loppu {
 	background-color: #444;
 	width: 100vw;
-	min-height: 100px;
-	height: 60vh;
+	
+	font-family: "Orbitron", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	text-shadow: 0px 0px 10px #0cc;
+	font-size: 18px;
+	
+	align-items: left;
+	text-align: left;
+
+}
+
+.loppu_content_holder {
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	margin-right: 10vw;
+	margin-left: 10vw;
+}
+
+.loppu h2 {
+	font-family: "Orbitron", sans-serif;
+	font-weight: 400;
+	font-style: bold;
+	text-shadow: 0px 0px 10px #0cc;
+	font-size: 24px;
+}
+
+.loppu p {
+	font-family: "Orbitron", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	text-shadow: 0px 0px 0px #000;
+	font-size: 18px;
+	color: white;
+	
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+.loppu a {
+	font-family: "Orbitron", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	text-shadow: 0px 0px 0px #000;
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+	
+	margin-top: 5px;
+	margin-bottom: 0px;
 }
 
 /* ----------------------------------------------------- */
