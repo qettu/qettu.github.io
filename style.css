@@ -471,6 +471,11 @@ hr {
 	margin-bottom: 0px;
 }
 
+.loppu a:hover {
+	color: #bbb;
+	text-decoration: underline;
+}
+
 /* ----------------------------------------------------- */
 
 /* ------------------- Puhelinversio ------------------- */
