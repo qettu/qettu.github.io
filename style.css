@@ -405,6 +405,14 @@ hr {
 	margin-right: 7%;
 }
 
+.loppu_gradient{
+	background-image: linear-gradient(rgba(0,0,0,0), #444);
+	min-height: 50px;
+	max-height: 100vw;
+	height: 50px;
+	width: 100vw;
+}
+
 .loppu {
 	background-color: #444;
 	width: 100vw;
@@ -417,7 +425,6 @@ hr {
 	
 	align-items: left;
 	text-align: left;
-
 }
 
 .loppu_content_holder {
