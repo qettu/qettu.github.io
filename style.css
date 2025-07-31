@@ -195,7 +195,7 @@ hr {
 	font-weight: 400;
 	font-style: normal;
 	text-shadow: 2px 2px 10px black;
-	font-size: 4vw;
+	font-size: 3vw;
 	color: #fff;
 	background-color: rgba(0,0,0,0.8);
 	width: 100vw;
@@ -346,12 +346,13 @@ hr {
 	margin-bottom: 10%;
 }
 
-#leftImages_16_9 {
+#images_16_9 {
 	position: relative;
 	margin-bottom: 10%;
 }
 
-/* Käännetään kuvia satunnaisesti */
+
+/* Käännetään kuvia ja teippejä satunnaisesti */
 #teipattu_kuva1_1{ rotate: 4deg; }
 #teippi1_1{ rotate: 4deg; }
 #teipattu_kuva1_2{ rotate: -4deg; }
@@ -379,21 +380,17 @@ hr {
 #teipattu_kuva3_4{ rotate: -5deg; }
 #teippi3_4{ rotate: -5deg; }
 
-#teipattu_kuva4_1{ rotate: 4deg; }
-#teippi4_1{ rotate: 4deg; }
-#teipattu_kuva4_2{ rotate: -1deg; }
-#teippi4_2{ rotate: -1deg; }
-#teipattu_kuva4_3{ rotate: 2deg; }
-#teippi4_3{ rotate: 2deg; }
-#teipattu_kuva4_4{ rotate: -2deg; }
-#teippi4_4{ rotate: -2deg; }
+#teipattu_kuva4_1{ rotate: 0deg; }
+#teipattu_kuva4_2{ rotate: 0deg; }
+#teipattu_kuva4_3{ rotate: 0deg; }
+#teipattu_kuva4_4{ rotate: 0deg; }
 
 
 
 .kuva{
 	box-shadow: 6px 6px 20px black;
 	max-width: 80%;
-	max-height: 80%;
+	max-height: 30vh;
 	margin-top: 4%;
 	margin-bottom: 4%;
 	margin-left: 4%;
@@ -438,6 +435,7 @@ hr {
 	margin-bottom: 2%;
 	margin-left: 2%;
 	margin-right: 2%;
+	loading: lazy;
 }
 
 .loppu_gradient{
@@ -589,7 +587,7 @@ hr {
 		font-weight: 400;
 		font-style: normal;
 		text-shadow: 2px 2px 10px black;
-		font-size: 8vw;
+		font-size: 6vw;
 		color: #fff;
 		background-color: rgba(0,0,0,0.8);
 	}
