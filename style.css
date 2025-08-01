@@ -559,7 +559,7 @@ hr {
 	}
 	.leftpane, .rightpane, .middlepane {
 		width: 100vw;
-		height: 170vw;
+		min-height: 170vw;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 10px;
