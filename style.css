@@ -127,10 +127,12 @@ textarea {
 /* ------------------- Tekstikenttä -------------------- */
 .tekstikentta_taustalla {
 	width: 90%;
-	height: 80%;
+	aspect-ratio: 3/4;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .tekstikentta_taustalla img {
@@ -576,7 +578,19 @@ hr {
 		margin-right: auto;
 		margin-top: 10px;
 		margin-bottom: 10px;
+		/*height: 80vh;
+	*/
 	}
+	/*
+	.tekstikentta_taustalla {
+		width: 90%;
+		aspect-ratio: 3/4;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: auto;
+		margin-bottom: auto;
+	}*/	
 	.d-flex {
 		display: block;
 		position: relative;
