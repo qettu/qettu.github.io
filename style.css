@@ -173,6 +173,12 @@ textarea {
 }
 /* ----------------------------------------------------- */
 
+.keskita {
+	align-items: center;
+	text-align: center;
+}
+
+
 hr {
 	border: 1px solid white;
 	border-radius: 5px;
