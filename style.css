@@ -359,6 +359,10 @@ hr {
 	margin-bottom: 10%;
 }
 
+.images_16_9 {
+	position: relative;
+	margin-bottom: 10%;
+}
 
 /* Käännetään kuvia ja teippejä satunnaisesti */
 #teipattu_kuva1_1{ rotate: 4deg; }
