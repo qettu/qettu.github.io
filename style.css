@@ -255,7 +255,7 @@ hr {
 }
 .toppane h3 {
 	font-size: 3vw;
-	text-shadow: 0px 0px 10px #0ff;	
+	text-shadow: 0px 0px 10px #0ff;
 	margin-top: 2vh;
 	margin-bottom: 0px;
 }
@@ -538,7 +538,7 @@ hr {
 	margin-bottom: 0px;
 }
 
-.loppu copyright p {
+.loppu .copyright p {
 	font-family: "Arial", sans-serif;
 	font-weight: 200;
 	font-style: normal;
