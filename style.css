@@ -10,10 +10,11 @@ body {
 	max-width: 100vw;
 	max-height: 100vh;
 	/* Taustakuvan animaation kesto */
-	-webkit-transition: background 0.0s;
+	/*-webkit-transition: background 0.0s;
 	-moz-transition: background 0.0s;
 	-ms-transition: background 0.0s;
 	-o-transition: background 0.0s;
+	*/
 	transition: background 0.0s;
 	margin: 0 !important;
 	
