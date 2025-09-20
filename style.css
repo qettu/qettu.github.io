@@ -515,7 +515,7 @@ hr {
 	height: 0.8em;
 }
 
-.loppu p2 {
+.loppu .p2 p {
 	font-family: "Arial", sans-serif;
 	font-weight: 200;
 	font-style: normal;
@@ -527,7 +527,7 @@ hr {
 	margin-bottom: 0px;
 }
 
-.loppu p2 a {
+.loppu .p2 a {
 	font-family: "Arial", sans-serif;
 	font-weight: 200;
 	font-style: normal;
