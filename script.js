@@ -24,30 +24,34 @@ document.onscroll = function() {
 	// Taustakuva vain, jos ruutu on tarpeeksi leveä
 	if (!(window.matchMedia("(max-width: 1000px)").matches)){
 		
+		
 		scrollTop = window.pageYOffset;
-		test.innerHTML = scrollTop;
-		allDivs = document.getElementsByTagName('alue');
+		// test.innerHTML = scrollTop;
+		allDivs = document.getElementsByClassName('alue');
 		
 		for( i=0; i< allDivs.length; i++ )
 		{
 			curDiv = allDivs[i];
 			heightBefore = 100;
-			//console.log(scrollTop);
-			//console.log(curDiv.offsetTop);
-			//console.log(heightBefore);
-			//console.log(curDiv.offsetTop - heightBefore);
+			console.log("scrolled from top:")
+			console.log(scrollTop);
+			console.log("Offset from top:")
+			console.log(curDiv.offsetTop);
+			console.log(heightBefore);
+			console.log(curDiv.offsetTop - heightBefore);
 			
 			if (scrollTop > curDiv.offsetTop - heightBefore){
-				//console.log("Bg Image change to...");
+				console.log("Bg Image change to...");
 				background_img = curDiv.getAttribute("data-bg");
-				//console.log(curDiv.getAttribute("data-bg"));
-				document.body.style.backgroundImage = background_img;
+				console.log(curDiv.getAttribute("data-bg"));
+				document.body.style.backgroundImage =  'url("' + background_img + '")';
 				document.body.style.backgroundRepeat = "no-repeat";
 				document.body.style.backgroundAttachment = "fixed";
 				document.body.style.backgroundPosition = "center";
 				document.body.style.backgroundSize = "cover";
 			}
 		}
+		// document.body.style.backgroundImage = 'url("images/sopwith_camel_rendered.jpg")';
 	} else {
 		document.body.style.background = "none";
 		document.body.style.backgroundColor = "#222";
