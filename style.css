@@ -457,7 +457,6 @@ hr {
 	margin-bottom: 2%;
 	margin-left: 2%;
 	margin-right: 2%;
-	loading: lazy;
 }
 
 .loppu_gradient{
@@ -478,7 +477,6 @@ hr {
 	text-shadow: 0px 0px 10px #0cc;
 	font-size: 18px;
 	
-	align-items: left;
 	text-align: left;
 }
 
@@ -492,7 +490,6 @@ hr {
 .loppu h3 {
 	font-family: "Orbitron", sans-serif;
 	font-weight: 400;
-	font-style: bold;
 	text-shadow: 0px 0px 10px #0cc;
 	font-size: 24px;
 	
