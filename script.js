@@ -59,6 +59,17 @@ document.onscroll = function() {
 	adjustFontSize();
 };
 
+// Overlayn näyttäminen sähköpostia klikattaessa
+function overlayOn(){
+	document.getElementById("overlay").style.display = "block";
+}
+function overlayOff(){
+	document.getElementById("overlay").style.display = "none";
+}
+emailKuvake = document.getElementById("email-kuvake");
+emailKuvake.onclick = function() {overlayOn(); return false};
+overlay_alue = document.getElementById("overlay");
+overlay_alue.onclick = function() {overlayOff(); return false};
 
 
 // Tekstien lisääminen tekstialueisiin, koska rivinvaihtoja ei voi lisätä

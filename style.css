@@ -49,7 +49,7 @@ li{
 }
 
 li a, .dropbutton{
-	min-width: 4vw;
+	min-width: 120px;
 	display: inline-block;
 	background-color: #333;
 	color: #0aa;
@@ -495,13 +495,13 @@ hr {
 	
 	margin-top: 40px;
 }
-
-.loppu p {
+/*
+.loppu p, a {
 	font-family: "Orbitron", sans-serif;
-	font-weight: 200;
+	font-weight: 100;
 	font-style: normal;
 	text-shadow: 0px 0px 0px #000;
-	font-size: 18px;
+	font-size: 14px;
 	color: white;
 	
 	margin-top: 5px;
@@ -535,7 +535,7 @@ hr {
 	margin-top: 5px;
 	margin-bottom: 0px;
 }
-
+*/
 .loppu .small p {
 	font-family: "Arial", sans-serif;
 	font-weight: 200;
@@ -548,23 +548,58 @@ hr {
 	margin-bottom: 0px;
 }
 
-.loppu a {
-	font-family: "Orbitron", sans-serif;
-	font-weight: 200;
-	font-style: normal;
-	text-shadow: 0px 0px 0px #000;
-	font-size: 18px;
-	text-decoration: none;
-	color: #fff;
-	
-	margin-top: 5px;
-	margin-bottom: 0px;
-}
-
 .loppu a:hover {
 	color: #bbb;
 	text-decoration: underline;
 }
+
+.linkki-ikoni {
+	transition: transform 0.2s; /*Animaation kesto*/
+	border: 0;
+	width: 200px;
+	height: 200px
+}
+
+.linkki-ikoni:hover{
+	transform: scale(1.3);
+}
+
+.overlay{
+	position: fixed;
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.9);
+	z-index: 6;
+	cursor: pointer;
+}
+
+#email-kuvake{
+	cursor: pointer;
+}
+
+.overlay_element {
+	margin-top: 35vh;
+	text-align: center;
+}
+.sulje p{
+	font-size: 20px;
+}
+.sulje {
+	size: 100 100;
+	padding-top: 20px;
+	padding-right: 20px;
+	display: flex;
+	justify-content: flex-end;
+}
+.sulje:hover p {
+	color: #888;
+}
+
 
 /* ----------------------------------------------------- */
 
@@ -613,7 +648,7 @@ hr {
 	}
 	.container {
 		position: relative;
-		font-size: 16px;
+		font-size: 20px;
 	}
 	.toppane h2 {
 		font-size: 10vw;
