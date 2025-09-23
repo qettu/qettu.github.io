@@ -607,7 +607,6 @@ hr {
 /* ------------------- Puhelinversio ------------------- */
 @media screen and (max-width: 1000px) {
 	.body {
-		/*background-image: url(images/hallway.jpg) no-repeat center center fixed;*/
 		background-image: url(images/hallway.jpg);
 		background-repeat: no-repeat;
 		background-attachment: scroll;
@@ -631,18 +630,7 @@ hr {
 		margin-right: auto;
 		margin-top: 10px;
 		margin-bottom: 10px;
-		/*height: 80vh;*/
 	}
-	/*
-	.tekstikentta_taustalla {
-		width: 90%;
-		aspect-ratio: 3/4;
-		position: relative;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: auto;
-		margin-bottom: auto;
-	}*/	
 	.d-flex {
 		display: block;
 		position: relative;
@@ -676,5 +664,64 @@ hr {
 		transform: translate(-50%, 0%);
 		position: relative;
 	}
+	/*thead td:not(:first-child) {
+        display: none;
+    }
+	td, th{
+		display: block;
+	}
+	td[data-th]:before  {
+        content: attr(data-th);
+    }*/
+	
+	/*
+	table {
+		border-collapse: collapse;
+		width:100%;
+		grid-template-columns: 1fr;
+	}
+	table, tr {
+        display: block;
+        width: 100%;
+		margin-bottom: 10px;
+	}
+    td, th {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+	*/
+
+    .responsive-table {
+        display: block;
+		width:100%;
+		border-collapse: collapse;
+    }
+
+    .header-row,
+    .data-row {
+        display: block;
+        margin-bottom: 10px; /* Optional: adds space between rows */
+    }
+
+    .header-cell,
+    .data-cell {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border: none; /* Optional: remove borders for a cleaner look */
+        padding: 10px; /* Optional: adjust padding */
+    }
+
+    /* Rearranging the order */
+    .header-cell:nth-child(1),
+    .data-cell:nth-child(1) {
+        order: 1; /* cell1 and cell3 */
+    }
+
+    .header-cell:nth-child(2),
+    .data-cell:nth-child(2) {
+        order: 3; /* cell2 and cell4 */
+    }
 }
 /* ----------------------------------------------------- */
