@@ -484,8 +484,6 @@ hr {
 	padding-bottom: 10vh;
 	margin-right: 10vw;
 	margin-left: 10vw;
-	align-items: center;
-	text-align: center;
 }
 .loppu h3 {
 	font-family: "Orbitron", sans-serif;
@@ -644,6 +642,10 @@ hr {
 	.responsive-table {
 		margin-left: auto;
     	margin-right: auto;
+	}
+	.loppu_content_holder {
+		align-items: center;
+		text-align: center;
 	}
 }
 /* ----------------------------------------------------- */
