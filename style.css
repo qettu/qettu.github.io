@@ -568,7 +568,7 @@ hr {
 }
 .responsive-table {
         display: block;
-		width:100%;
+		width: auto;
 		border-collapse: collapse;
 		text-align:center;
 		text-shadow: 0px 0px 0px black;
@@ -637,10 +637,13 @@ hr {
 		position: relative;
 	}
 	td, th {
-        display: block;
-        width: 100%;
+        display: inline-block;
         box-sizing: border-box;
 		text-align: center;
     }
+	.responsive-table {
+		margin-left: auto;
+    	margin-right: auto;
+	}
 }
 /* ----------------------------------------------------- */
