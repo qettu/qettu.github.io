@@ -545,21 +545,64 @@ hr {
 #email-kuvake{
 	cursor: pointer;
 }
-
 .overlay_element {
-	margin-top: 35vh;
+	margin-top: 25vh;
 	text-align: center;
+}
+.overlay_element h3{
+	font-size: 35px;
+	font-family: "Orbitron", sans-serif;
+	text-shadow: 0px 0px 10px white;
+}
+.overlay_element .osoite p{
+	margin-top: 30px;
+	font-size: 35px;
+	padding-bottom: 10px;
+	font-family: "Arial", sans-serif;
+	text-shadow: 0px 0px 0px black;
+}
+
+.overlay_element img{
+	height: 1em;
+}
+.overlay_element a{
+	z-index: 8;
+}
+.huomio {
+	position: absolute; 
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: auto;
+	margin-inline: auto;
+	width: fit-content;
+}
+.huomio pre {
+	font-size: 14px;
+	font-family: "Arial", sans-serif;
+	text-shadow: 0px 0px 0px black;
+}
+.huomio a {
+	color: #0cc;
+}
+.huomio a:hover {
+	color: #099;
+}
+.huomio a:visited {
+	color: #e5e;
+}
+.huomio a:visited:hover {
+	color: #b3b;
 }
 .sulje p{
 	font-size: 20px;
 }
 .sulje {
-	height: 100px;
-	width: 100px;
 	padding-top: 20px;
 	padding-right: 20px;
 	display: flex;
 	justify-content: flex-end;
+	text-align: right;
 }
 .sulje:hover p {
 	color: #888;
@@ -628,7 +671,7 @@ hr {
 		display: block;
 		position: relative;
 	}
-	.col{
+	.col {
 		width: 80%;
 		left: 50%;
 		transform: translate(-50%, 0%);
@@ -646,6 +689,12 @@ hr {
 	.loppu_content_holder {
 		align-items: center;
 		text-align: center;
+	}
+	.overlay_element h3{
+		font-size: 6vw;
+	}
+	.overlay_element .osoite p{
+		font-size: 5.5vw;
 	}
 }
 /* ----------------------------------------------------- */

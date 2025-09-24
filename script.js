@@ -68,8 +68,8 @@ function overlayOff(){
 }
 emailKuvake = document.getElementById("email-kuvake");
 emailKuvake.onclick = function() {overlayOn(); return false};
-overlay_alue = document.getElementById("overlay");
-overlay_alue.onclick = function() {overlayOff(); return false};
+//overlay_alue = document.getElementById("overlay");
+//overlay_alue.onclick = function() {overlayOff(); return false};
 
 
 // Tekstien lisääminen tekstialueisiin, koska rivinvaihtoja ei voi lisätä
