@@ -479,14 +479,14 @@ hr {
 	
 	text-align: left;
 }
-
 .loppu_content_holder {
 	padding-top: 10vh;
 	padding-bottom: 10vh;
 	margin-right: 10vw;
 	margin-left: 10vw;
+	align-items: center;
+	text-align: center;
 }
-
 .loppu h3 {
 	font-family: "Orbitron", sans-serif;
 	font-weight: 400;
@@ -495,47 +495,13 @@ hr {
 	
 	margin-top: 40px;
 }
-/*
-.loppu p, a {
+.loppu h4 {
 	font-family: "Orbitron", sans-serif;
-	font-weight: 100;
-	font-style: normal;
-	text-shadow: 0px 0px 0px #000;
-	font-size: 14px;
-	color: white;
-	
-	margin-top: 5px;
-	margin-bottom: 0px;
-}
-
-.loppu p img {
-	height: 0.8em;
-}
-
-.loppu .p2 p {
-	font-family: "Arial", sans-serif;
 	font-weight: 200;
-	font-style: normal;
-	text-shadow: 0px 0px 0px #000;
-	font-size: 12px;
-	color: #faa;
-	
-	margin-top: 5px;
-	margin-bottom: 0px;
+	text-shadow: 0px 0px 0px, black;
+	font-size: 20px;	
+	margin-top: 20px;
 }
-
-.loppu .p2 a {
-	font-family: "Arial", sans-serif;
-	font-weight: 200;
-	font-style: normal;
-	text-shadow: 0px 0px 0px #000;
-	font-size: 12px;
-	color: white;
-	
-	margin-top: 5px;
-	margin-bottom: 0px;
-}
-*/
 .loppu .small p {
 	font-family: "Arial", sans-serif;
 	font-weight: 200;
@@ -600,7 +566,13 @@ hr {
 .sulje:hover p {
 	color: #888;
 }
-
+.responsive-table {
+        display: block;
+		width:100%;
+		border-collapse: collapse;
+		text-align:center;
+		text-shadow: 0px 0px 0px black;
+}
 
 /* ----------------------------------------------------- */
 
@@ -664,64 +636,11 @@ hr {
 		transform: translate(-50%, 0%);
 		position: relative;
 	}
-	/*thead td:not(:first-child) {
-        display: none;
-    }
-	td, th{
-		display: block;
-	}
-	td[data-th]:before  {
-        content: attr(data-th);
-    }*/
-	
-	/*
-	table {
-		border-collapse: collapse;
-		width:100%;
-		grid-template-columns: 1fr;
-	}
-	table, tr {
-        display: block;
-        width: 100%;
-		margin-bottom: 10px;
-	}
-    td, th {
+	td, th {
         display: block;
         width: 100%;
         box-sizing: border-box;
-    }
-	*/
-
-    .responsive-table {
-        display: block;
-		width:100%;
-		border-collapse: collapse;
-    }
-
-    .header-row,
-    .data-row {
-        display: block;
-        margin-bottom: 10px; /* Optional: adds space between rows */
-    }
-
-    .header-cell,
-    .data-cell {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        border: none; /* Optional: remove borders for a cleaner look */
-        padding: 10px; /* Optional: adjust padding */
-    }
-
-    /* Rearranging the order */
-    .header-cell:nth-child(1),
-    .data-cell:nth-child(1) {
-        order: 1; /* cell1 and cell3 */
-    }
-
-    .header-cell:nth-child(2),
-    .data-cell:nth-child(2) {
-        order: 3; /* cell2 and cell4 */
+		text-align: center;
     }
 }
 /* ----------------------------------------------------- */
