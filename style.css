@@ -456,6 +456,10 @@ hr {
 	margin-bottom: 2%;
 	margin-left: 2%;
 	margin-right: 2%;
+	transition: transform 0.2s;
+}
+.col img:hover{
+	transform: scale(1.05);
 }
 
 .loppu_gradient{
