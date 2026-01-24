@@ -82,10 +82,10 @@ tekstialue1 = document.getElementById("tekstialue1");
 tekstialue2 = document.getElementById("tekstialue2");
 tekstialue3 = document.getElementById("tekstialue3");
 
-log("Sopwith F-1 Camel modeled with Blender \n\n I have made all the modeling and textures myself. The project is not ready yet (the background and character are in progress) but I will use this model in a shortfilm. ", tekstialue1)
-log("Futuristic corridor \n\n A simple 3D-model with only procedural textures. ", tekstialue2)
-log("I have coded a program (using C++ and LunarG's Vulkan SDK) that can load 3D-models and textures from .gltf files and pre-mipmapped KTX-texture files. The base of program is made by following Alexander Overvoorde's Vulkan tutorial (hyperlink below). I have later added Blinn-Phong lighting and some other features. The main code includes 3000 rows of  C++-code. In addition, program contains GLSL-coded shaders translated into SPIR-V. ", tekstialue3)
-log("This old project combined wildlife photografing and programming. The Android app made with Android-Studio and Java allows the user to save butterfly observations (weather, temperature, location and species) and browse common butterflies based on their characteristics.", tekstialue4)
+log("Sopwith F-1 Camel modeled with Blender \n\n I created this model along with its textures for a shortfilm, but the project is still in progress (the background is in the early stage, and the character is in the making). Most of the textures are procedural.", tekstialue1)
+log("Futuristic corridor \n\n A simple 3D model with only procedural textures. ", tekstialue2)
+log("I have coded a program (using C++ and LunarG's Vulkan SDK) that can load 3D models and textures from .gltf files and pre-mipmapped KTX texture files. The base of the program is built by following Alexander Overvoorde's Vulkan tutorial (hyperlink below). I have later added Blinn-Phong lighting and some other features. The main code includes 3,000 lines of C++-code. In addition, the program contains GLSL-coded shaders translated into SPIR-V. ", tekstialue3)
+log("This old project combined wildlife photografing and programming. The Android app, made with Android Studio and Java, allows the user to save butterfly observations (including weather, temperature, location and species) and browse common butterflies based on their characteristics.", tekstialue4)
 
 
 //log("Blenderillä mallinnettu Sopwith F-1 Camel.\n\n - Malli on toteutettu alusta asti itse.\n - Kaikki tekstuurit ovat itse valokuvattuja tai proseduraalisesti luotuja.\n - Projekti on edelleen kesken. Seuraava tavoite on maisema ja animoitu hahmo, joilla olisi mahdollista toteuttaa lyhyt, loppuun asti renderöity ja jälkiprosessoitu lyhytanimaatio.", tekstialue1)
