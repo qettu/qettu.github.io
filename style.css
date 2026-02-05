@@ -49,7 +49,7 @@ li{
 }
 
 li a, .dropbutton{
-	min-width: 160px;
+	min-width: 240px;
 	display: inline-block;
 	background-color: #333;
 	color: #0aa;
@@ -402,6 +402,15 @@ hr {
 #teipattu_kuva4_2{ rotate: 0deg; }
 #teipattu_kuva4_3{ rotate: 0deg; }
 #teipattu_kuva4_4{ rotate: 0deg; }
+
+#teipattu_kuva7_1{ rotate: -1deg; }
+#teippi7_1{ rotate: -1deg; }
+#teipattu_kuva7_2{ rotate: 2deg; }
+#teippi7_2{ rotate: 2deg; }
+#teipattu_kuva7_3{ rotate: 2deg; }
+#teippi7_3{ rotate: 2deg; }
+#teipattu_kuva7_4{ rotate: -1deg; }
+#teippi7_4{ rotate: -1deg; }
 
 
 
