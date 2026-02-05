@@ -98,7 +98,7 @@ if(tekstialue4!=null){
 	log("This old project combined wildlife photografing and programming. The Android app, made with Android Studio and Java, allows the user to save butterfly observations (including weather, temperature, location and species) and browse common butterflies based on their characteristics.", tekstialue4)
 }
 if(tekstialue7!=null){
-	log("Some calculators have a programming function. Using simple matrix multiplication and vectors, you can write a program that rotates an object and displays the result on the screen.", tekstialue7)
+	log("Some calculators have a programming function. Using simple matrix multiplication and vectors, you can write a program that rotates an object and displays the result on the screen.\n Check out the code from hyperlink below.", tekstialue7)
 }
 
 // Finnish translations
