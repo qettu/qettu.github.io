@@ -13,7 +13,6 @@ function adjustFontSize() {
 }
 
 
-
 // Säädetään fontti jo alussa oikein
 adjustFontSize();
 window.addEventListener('resize', adjustFontSize);
@@ -23,12 +22,11 @@ document.onscroll = function() {
 	// Taustakuva vain, jos ruutu on tarpeeksi leveä
 	if (!(window.matchMedia("(max-width: 1000px)").matches)){
 		
-		
 		scrollTop = window.pageYOffset;
 		// test.innerHTML = scrollTop;
 		allDivs = document.getElementsByClassName('alue');
 		
-		for( i=0; i< allDivs.length; i++ )
+		for( i = allDivs.length - 1; i >= 0; i-- )
 		{
 			curDiv = allDivs[i];
 			heightBefore = 100;
@@ -40,7 +38,6 @@ document.onscroll = function() {
 			//console.log(curDiv.offsetTop - heightBefore);
 			
 			if (scrollTop > curDiv.offsetTop - heightBefore){
-				console.log("Bg Image change to...");
 				background_img = curDiv.getAttribute("data-bg");
 				console.log(curDiv.getAttribute("data-bg"));
 				document.body.style.backgroundImage =  'url("' + background_img + '")';
@@ -48,6 +45,7 @@ document.onscroll = function() {
 				document.body.style.backgroundAttachment = "fixed";
 				document.body.style.backgroundPosition = "center";
 				document.body.style.backgroundSize = "cover";
+				break;
 			}
 		}
 		// document.body.style.backgroundImage = 'url("images/sopwith_camel_rendered.jpg")';
@@ -77,6 +75,7 @@ function log(text, tekstialue) {
     tekstialue.value = text + '\r\n';
 }
 
+tekstialue0 = document.getElementById("tekstialue0");
 tekstialue1 = document.getElementById("tekstialue1");
 tekstialue2 = document.getElementById("tekstialue2");
 tekstialue3 = document.getElementById("tekstialue3");
@@ -84,7 +83,9 @@ tekstialue4 = document.getElementById("tekstialue4");
 
 tekstialue7 = document.getElementById("tekstialue7");
 
-
+if(tekstialue0!=null){
+	log("A rigged 3D character with dynamic hair. The arms and legs use inverse kinematics. The eyes use Bendy bones, drivers, complex bone parenting, and Shrinkwrap modifiers. ", tekstialue0)
+}
 if(tekstialue1!=null){
 	log("Sopwith F-1 Camel modeled with Blender \n\n I created this model along with its textures for a shortfilm, but the project is still in progress (the background is in the early stage, and the character is in the making). Most of the textures are procedural.", tekstialue1)
 }

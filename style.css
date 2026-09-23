@@ -22,7 +22,7 @@ body {
 }
 
 /* ------------------- Valikko ------------------------- */
-ul{
+ul {
 	font-family: "Orbitron", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -206,7 +206,7 @@ hr {
 	text-shadow: 2px 2px 10px black;
 	font-size: 3vw;
 	color: #fff;
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(20,20,20,0.8);
 	width: 100vw;
 }
 
@@ -224,10 +224,13 @@ hr {
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
-	height: 100vh;	
-	margin-top: 0px;
+	height: 100vh;
 	
 	width: 100vw;
+	border:1px solid red;
+	margin: 0;
+	padding: 0;
+	border: none;
 }
 
 @keyframes fly_in_top {
@@ -370,48 +373,10 @@ hr {
 	text-align: center;
 }
 
+
 /* Käännetään kuvia ja teippejä satunnaisesti */
-#teipattu_kuva1_1{ rotate: 4deg; }
-#teippi1_1{ rotate: 4deg; }
-#teipattu_kuva1_2{ rotate: -4deg; }
-#teippi1_2{ rotate: -4deg; }
-#teipattu_kuva1_3{ rotate: 5deg; }
-#teippi1_3{ rotate: 5deg; }
-#teipattu_kuva1_4{ rotate: -1deg; }
-#teippi1_4{ rotate: -1deg; }
-
-#teipattu_kuva2_1{ rotate: 3deg; }
-#teippi2_1{ rotate: 3deg; }
-#teipattu_kuva2_2{ rotate: -3deg; }
-#teippi2_2{ rotate: -3deg; }
-#teipattu_kuva2_3{ rotate: 1deg; }
-#teippi2_3{ rotate: 1deg; }
-#teipattu_kuva2_4{ rotate: -6deg; }
-#teippi2_4{ rotate: -6deg; }
-
-#teipattu_kuva3_1{ rotate: 1deg; }
-#teippi3_1{ rotate: 1deg; }
-#teipattu_kuva3_2{ rotate: 2deg; }
-#teippi3_2{ rotate: 2deg; }
-#teipattu_kuva3_3{ rotate: -2deg; }
-#teippi3_3{ rotate: -2deg; }
-#teipattu_kuva3_4{ rotate: -5deg; }
-#teippi3_4{ rotate: -5deg; }
-
-#teipattu_kuva4_1{ rotate: 0deg; }
-#teipattu_kuva4_2{ rotate: 0deg; }
-#teipattu_kuva4_3{ rotate: 0deg; }
-#teipattu_kuva4_4{ rotate: 0deg; }
-
-#teipattu_kuva7_1{ rotate: -1deg; }
-#teippi7_1{ rotate: -1deg; }
-#teipattu_kuva7_2{ rotate: 2deg; }
-#teippi7_2{ rotate: 2deg; }
-#teipattu_kuva7_3{ rotate: 2deg; }
-#teippi7_3{ rotate: 2deg; }
-
-
-.kuva{
+.teipattu_kuva1{
+	rotate: 4deg;
 	box-shadow: 6px 6px 20px black;
 	max-width: 80%;
 	max-height: 50vh;
@@ -420,7 +385,65 @@ hr {
 	margin-left: 4%;
 	margin-right: 4%;
 }
-.tehoste {
+.teippi1{
+	rotate: 4deg;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 3%;
+	max-width: 100%;
+	max-height: 100%;
+}
+.teipattu_kuva2{
+	rotate: -3deg;
+	box-shadow: 6px 6px 20px black;
+	max-width: 80%;
+	max-height: 50vh;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+.teippi2{
+	rotate: -3deg;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 3%;
+	max-width: 100%;
+	max-height: 100%;
+}
+.teipattu_kuva3{
+	rotate: 3deg;
+	box-shadow: 6px 6px 20px black;
+	max-width: 80%;
+	max-height: 50vh;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+.teippi3{
+	rotate: 3deg;
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	top: 3%;
+	max-width: 100%;
+	max-height: 100%;
+}
+.teipattu_kuva4{
+	rotate: -1deg;
+	box-shadow: 6px 6px 20px black;
+	max-width: 80%;
+	max-height: 50vh;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+.teippi4{
+	rotate: -1deg;
 	position: absolute;
 	left: 5%;
 	right: 5%;
@@ -429,6 +452,15 @@ hr {
 	max-height: 100%;
 }
 
+video {
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: -20px;
+	border: none;
+	width: 100%;
+	border-top: 100px solid black;
+	border-bottom: 40px solid black;
+}
 
 .middlepane {
 	color: #fff;
@@ -630,13 +662,20 @@ hr {
 		text-align:center;
 		text-shadow: 0px 0px 0px black;
 }
-
 /* ----------------------------------------------------- */
 
 /* ------------------- Puhelinversio ------------------- */
 @media screen and (max-width: 1000px) {
+	video {
+		margin: 0px;
+		margin-bottom: -20px;
+		border: none;
+		width: 100%;
+		border-top: 250px solid black;
+		border-bottom: 100px solid black;
+	}
 	.body {
-		background-image: url(images/hallway.jpg);
+		/*background-image: url(images/hallway.jpg);*/
 		background-repeat: no-repeat;
 		background-attachment: scroll;
 		background-position: center;
@@ -681,7 +720,7 @@ hr {
 		text-shadow: 2px 2px 10px black;
 		font-size: 6vw;
 		color: #fff;
-		background-color: rgba(0,0,0,0.8);
+		background-color: rgba(20,20,20,0.8);	
 	}
 	.galleria {
 		display: block;

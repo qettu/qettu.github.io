@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- main -->
 <html lang="en">
 
 <head>
@@ -13,97 +12,141 @@
 	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Pangolin&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
 	<!-- Valikko -->
 	<ul>
 		<li class="dropdown">
 			<a href="javascript:void(0)" class="dropbutton">Portfolio</a>
 			<div class="dropdown-content">
-				<a href="#part0">Welcome</a>
-				<a href="#part1">Sopwith Camel</a>
-				<a href="#part2">Corridor</a>
-				<a href="#part3">Vulkan</a>
-				<a href="#part4">Butterfly app</a>
-				<a href="#part7">Calculator 3D graphics</a>
-				<a href="#part5">Nature photographs</a>
-				<a href="#part6">Contact details</a>
+				<a href="#part_top">Welcome</a>
+				<a href="#part_rigged_character">Rigged Character</a>
+				<a href="#part_sopwith_camel">Sopwith Camel</a>
+				<a href="#part_corridor">Corridor</a>
+				<a href="#part_vulkan">Vulkan</a>
+				<a href="#part_butterfly_app">Butterfly app</a>
+				<a href="#part_calculator">Calculator 3D graphics</a>
+				<a href="#part_photographs">Nature photographs</a>
+				<a href="#part_contact_details">Contact details</a>
 			</div>
 		</li>
 		<li class="dropdown">
 			<a href="javascript:void(0)" class="dropbutton">Animation & modeling</a>
 			<div class="dropdown-content">
-				<a href="animation/index.html#part0">Welcome</a>
-				<a href="animation/index.html#part1">Sopwith Camel</a>
-				<a href="animation/index.html#part2">Corridor</a>
-				<a href="animation/index.html#part6">Contact details</a>
+				<a href="animation/index.html#part_top">Welcome</a>
+				<a href="animation/index.html#part_sopwith_camel">Sopwith Camel</a>
+				<a href="animation/index.html#part_corridor">Corridor</a>
+				<a href="animation/index.html#part_contact_details">Contact details</a>
 			</div>
 		</li>
 		<li class="dropdown">
 			<a href="javascript:void(0)" class="dropbutton">Physics</a>
 			<div class="dropdown-content">
-				<a href="physics/index.html#part0">Welcome</a>
-				<a href="physics/index.html#part6">Contact details</a>
+				<a href="physics/index.html#part_top">Welcome</a>
+				<a href="physics/index.html#part_contact_details">Contact details</a>
 			</div>
 		</li>
 		<li class="dropdown">
 			<a href="javascript:void(0)" class="dropbutton">Programming</a>
 			<div class="dropdown-content">
-				<a href="coding/index.html#part0">Welcome</a>
-				<a href="coding/index.html#part3">Vulkan</a>
-				<a href="coding/index.html#part4">Butterfly app</a>
-				<a href="coding/index.html#part7">Calculator 3D graphics</a>
-				<a href="coding/index.html#part6">Contact details</a>
+				<a href="coding/index.html#part_top">Welcome</a>
+				<a href="coding/index.html#part_vulkan">Vulkan</a>
+				<a href="coding/index.html#part_butterfly_app">Butterfly app</a>
+				<a href="coding/index.html#part_calculator">Calculator 3D graphics</a>
+				<a href="coding/index.html#part_contact_details">Contact details</a>
 			</div>
 		</li>
 		<li class="dropdown">
 			<a href="javascript:void(0)" class="dropbutton">Photographs</a>
 			<div class="dropdown-content">
-				<a href="gallery/index.html#part0">Welcome</a>
-				<a href="gallery/index.html#part5">Gallery</a>
-				<a href="gallery/index.html#part6">Contact details</a>
+				<a href="gallery/index.html#part_top">Welcome</a>
+				<a href="gallery/index.html#part_photographs">Gallery</a>
+				<a href="gallery/index.html#part_contact_details">Contact details</a>
 			</div>
 		</li>
 	</ul>
 	
 	<!-- sivu -->
-	<div style="position:fixed" id="test"></div>
+
 	<div class="keskita">
 		<div class="container">
 			
-			<div class="alue" id="part0" data-bg="images/sopwith_camel_rendered.jpg">
-			
+			<div class="alue" id="part_top" data-bg="images/black.jpg">
 				<div class="toppane">
 					<h1>Portfolio</h1>
 					<h3>Niilo Vertainen</h3>
 					<div class="circle">
-						<a href="#part1">
+						<a href="#part_rigged_character">
 							<img class="nuoli" src="images/nuoli.png" id="animoitu_nuoli" alt = " "  title = "arrow">
 						</a>
 					</div>
 				</div>
-				
-				<div class="gradient"></div>
 			</div>
 
+			<div class="alue" id="part_rigged_character" data-bg="images/black.jpg">
 
-			<div class="alue" id="part1" data-bg="images/sopwith_camel_rendered.jpg">
+				<video autoplay muted loop id="bg_video">
+					<source src="rigging_test.mp4" type="video/mp4">
+				</video>
+
+				<div class="gradient"></div>
+				<div class="space_for_background"></div>
+				<h2 class="subtitle">Rigged 3D character</h2>
+				<div class="space_for_background"></div>
+
+				<div class="d-flex">
+					<div class="leftpane">
+						<p>Rendered character</p>
+						<div class="images_16_9">
+							<img src="images/rigged_character_rendered.jpg" class="teipattu_kuva1" loading="lazy" alt = "Rendered 3D character"  title = "Rigged 3D character, rendered">
+							<img src="images/teippi_16_9.png" class="teippi1" alt = "tape to image corners"  title = " ">
+						</div>
+						<p>Normal pose rendered</p>
+						<div class="images_16_9">
+							<img src="images/rigged_character_normal_pose.jpg" class="teipattu_kuva2" loading="lazy" alt="Rigged 3D character in normal pose" title="Rigged 3D character, normal pose">
+							<img src="images/teippi_16_9.png" class="teippi2" alt="tape to image corners" title=" ">
+						</div>
+					</div>
+
+					<div class="middlepane">
+						<h2>Rigged 3D character</h2>
+						<div class="tekstikentta_taustalla">
+							<img class="muistiopaperi" id="muistiopaperi0" src="images/muistio.png" alt="notebook page" title="notebook page">
+							<textarea class="tekstialue" spellcheck="false" id="tekstialue0" readonly="readonly">Javascript error</textarea>
+						</div>
+					</div>
+
+					<div class="rightpane">
+						<p>Face and face bones</p>
+						<div class="images_16_9">
+							<img src="images/rigged_character_face.jpg" class="teipattu_kuva3" loading="lazy" alt="Rigged 3D character face" title="Rigged 3D character, face with bones">
+							<img src="images/teippi_16_9.png" class="teippi3" alt="tape to image corners" title=" ">
+						</div>
+						<p>Viewport</p>
+						<div class="images_16_9">
+							<img src="images/rigged_character_viewport.jpg" class="teipattu_kuva4" loading="lazy" alt="alt" title="Rigged 3D character in Blender viewport">
+							<img src="images/teippi_16_9.png" class="teippi4" alt="tape to image corners" title=" ">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="alue" id="part_sopwith_camel" data-bg="images/sopwith_camel_rendered.jpg">
 				<div class="space_for_background"></div>
 				<h2 class="subtitle">Sopwith F&#x2011;1 Camel</h2>
 				<div class="space_for_background"></div>
 				<div class="d-flex">
 				
 					<div class="leftpane">
-						<h2>Images</h2>
 						<p>Rendered image</p>
 						<div class="images_16_9">
-							<img class="kuva" src="images/sopwith_camel_rendered.jpg" id="teipattu_kuva1_1" loading="lazy" alt = "Sopwith Camel F-1 rendered with blender"  title = "Sopwith Camel F-1 rendered">
-							<img class="tehoste" src="images/teippi_16_9.png" id="teippi1_1" alt = "tape to image corners"  title = " ">
+							<img src="images/sopwith_camel_rendered.jpg" class="teipattu_kuva1" loading="lazy" alt = "Sopwith Camel F-1 rendered with blender"  title = "Sopwith Camel F-1 rendered">
+							<img src="images/teippi_16_9.png" class="teippi1" alt = "tape to image corners"  title = " ">
 						</div>
 						<p>Wireframe top</p>
 						<div class="images_16_9">
-							<img class="kuva" src="images/wireframe_top.jpg" id="teipattu_kuva1_2" loading="lazy" alt="Sopwith Camel F-1 wireframe viewed from top" title="Sopwith Camel F-1 vaijerimalli ylhaalta">
-							<img class="tehoste" src="images/teippi_16_9.png" id="teippi1_2" alt="tape to image corners" title=" ">
+							<img src="images/wireframe_top.jpg" class="teipattu_kuva2" loading="lazy" alt="Sopwith Camel F-1 wireframe viewed from top" title="Sopwith Camel F-1 vaijerimalli ylhaalta">
+							<img src="images/teippi_16_9.png" class="teippi2" alt="tape to image corners" title=" ">
 						</div>
 					</div>
 
@@ -116,33 +159,31 @@
 					</div>
 
 					<div class="rightpane">
-						<h2> - </h2>
 						<p>Wireframe left</p>
 						<div class="images_16_9">
-							<img class="kuva" src="images/wireframe_left.jpg" id="teipattu_kuva1_3" loading="lazy" alt="Sopwith Camel F-1 wireframe viewed from left" title="Sopwith Camel F-1 vaijerimalli vasemmalta">
-							<img class="tehoste" src="images/teippi_16_9.png" id="teippi1_3" alt="tape to image corners" title=" ">
+							<img src="images/wireframe_left.jpg" class="teipattu_kuva3" loading="lazy" alt="Sopwith Camel F-1 wireframe viewed from left" title="Sopwith Camel F-1 vaijerimalli vasemmalta">
+							<img src="images/teippi_16_9.png" class="teippi3" alt="tape to image corners" title=" ">
 						</div>
 						<p>Blender viewport screenshot</p>
 						<div class="images_16_9">
-							<img class="kuva" src="images/sopwith_camel_viewport.jpg" id="teipattu_kuva1_4" loading="lazy" alt="Sopwith Camel F-1 viewport-image" title="Sopwith Camel F-1 viewport-kuva">
-							<img class="tehoste" src="images/teippi_16_9.png" id="teippi1_4" alt="tape to image corners" title=" ">
+							<img src="images/sopwith_camel_viewport.jpg" class="teipattu_kuva4" loading="lazy" alt="Sopwith Camel F-1 viewport-image" title="Sopwith Camel F-1 viewport-kuva">
+							<img src="images/teippi_16_9.png" class="teippi4" alt="tape to image corners" title=" ">
 						</div>
 					</div>
 				</div>
 			</div>
 			
-			<div class="alue" id="part2" data-bg="images/hallway.jpg">
+			<div class="alue" id="part_corridor" data-bg="images/hallway.jpg">
 				<div class="space_for_background"></div>
 				<h2 class="subtitle">Corridor</h2>
 				<div class="space_for_background"></div>
 				<div class="d-flex">
 				
 					<div class="leftpane">
-						<h2>Images</h2>
 						<p>Finished image</p>
 						<div class="images_16_9">
-							<img class="kuva" src="images/hallway.jpg" id="teipattu_kuva2_1" alt="3D Sci-fi corridor made with Blender" title="Sci-fi Käytävä">
-							<img class="tehoste" src="images/teippi_16_9.png" id="teippi2_1" alt="tape to image corners" title=" ">
+							<img src="images/hallway.jpg" class="teipattu_kuva1" alt="3D Sci-fi corridor made with Blender" title="Sci-fi Käytävä">
+							<img src="images/teippi_16_9.png" class="teippi1" alt="tape to image corners" title=" ">
 						</div>
 					</div>
 
@@ -155,12 +196,11 @@
 					</div>
 
 					<div class="rightpane">
-						<h2> - </h2>
 					</div>
 				</div>	
 			</div>
 			
-			<div class="alue" id="part3" data-bg="images/vulkan_fox.jpg">
+			<div class="alue" id="part_vulkan" data-bg="images/vulkan_fox.jpg">
 				<div class="space_for_background"></div>
 				<h2 class="subtitle">Vulkan</h2>
 				<div class="space_for_background"></div>
@@ -168,13 +208,13 @@
 					<div class="leftpane">
 						<p>Screenshot</p>
 						<div class="images_16_9">
-							<img class="kuva" src="images/vulkan_rendered.jpg" id="teipattu_kuva3_1" loading="lazy" alt="Screenshot from Vulkan program" title="Vulkan-ohjelma">
-							<img class="tehoste" src="images/teippi_16_9.png" id="teippi3_1" alt="tape to image corners" title=" ">
+							<img src="images/vulkan_rendered.jpg" class="teipattu_kuva1" loading="lazy" alt="Screenshot from Vulkan program" title="Vulkan-ohjelma">
+							<img src="images/teippi_16_9.png" class="teippi1" alt="tape to image corners" title=" ">
 						</div>
 						<p>Screenshot</p>
 						<div class="images_16_9">
-							<img class="kuva" src="images/vulkan_screenshot.jpg" id="teipattu_kuva3_2" loading="lazy" alt="Screenshot from Vulkan program development" title="Vulkan-ohjelman kehitysympäristö">
-							<img class="tehoste" src="images/teippi_16_9.png" id="teippi3_2" alt="tape to image corners" title=" ">
+							<img src="images/vulkan_screenshot.jpg" class="teipattu_kuva2" loading="lazy" alt="Screenshot from Vulkan program development" title="Vulkan-ohjelman kehitysympäristö">
+							<img src="images/teippi_16_9.png" class="teippi2" alt="tape to image corners" title=" ">
 						</div>
 					</div>
 					
@@ -189,8 +229,8 @@
 					<div class="rightpane">
 						<p>Textured fox model imported</p>
 						<div class="images_16_9">
-							<img class="kuva" src="images/vulkan_fox.jpg" id="teipattu_kuva3_3" loading="lazy" alt="Screenshot from Vulkan program development environment" title="Screenshot of textured fox 3D-model">
-							<img class="tehoste" src="images/teippi_16_9.png" id="teippi3_3" alt="tape to image corners" title=" ">
+							<img src="images/vulkan_fox.jpg" class="teipattu_kuva3" loading="lazy" alt="Screenshot from Vulkan program development environment" title="Screenshot of textured fox 3D-model">
+							<img src="images/teippi_16_9.png" class="teippi3" alt="tape to image corners" title=" ">
 						</div>
 						<p>Hyperlink to Alexander Overvoorde's Vulkan Tutorial</p>
 						<a href="https://vulkan-tutorial.com/Introduction">vulkan-tutorial.com</a>
@@ -200,21 +240,20 @@
 				</div>
 			</div>
 			
-			<div class="alue" id="part4" data-bg="images/perhossovellus_tausta.jpg">
+			<div class="alue" id="part_butterfly_app" data-bg="images/perhossovellus_tausta.jpg">
 				<div class="space_for_background"></div>
 				<h2 class="subtitle">Butterfly app</h2>
 				<div class="space_for_background"></div>
 				<div class="d-flex">
 					<div class="leftpane">
-						<h2>Images</h2>
 						<p>Home</p>
 						<div class="images_16_9">
-							<img class="kuva" src="images/perhossovellus_aloitus.jpg" id="teipattu_kuva4_1" loading="lazy" alt="Butterfly app - home page" title="Perhossovellus - Kotivalikko">
+							<img src="images/perhossovellus_aloitus.jpg" class="teipattu_kuva1" loading="lazy" alt="Butterfly app - home page" title="Perhossovellus - Kotivalikko">
 							
 						</div>
 						<p>My observations</p>
 						<div class="images_16_9">
-							<img class="kuva" src="images/perhossovellus_merkinnat.jpg" id="teipattu_kuva4_2" loading="lazy" alt="Butterfly app - my observations page" title="Perhossovellus - merkinnät">
+							<img src="images/perhossovellus_merkinnat.jpg" class="teipattu_kuva2" loading="lazy" alt="Butterfly app - my observations page" title="Perhossovellus - merkinnät">
 							
 						</div>
 					</div>
@@ -228,14 +267,13 @@
 					</div>
 
 					<div class="rightpane">
-						<h2>Images</h2>
 						<p>Main color selection</p>
 						<div class="images_16_9">
-							<img class="kuva" src="images/perhossovellus_paavari.jpg" id="teipattu_kuva4_3" loading="lazy" alt="Butterfly app - main color selection" title="Perhossovellus - Pääväri">
+							<img src="images/perhossovellus_paavari.jpg" class="teipattu_kuva3" loading="lazy" alt="Butterfly app - main color selection" title="Perhossovellus - Pääväri">
 						</div>
 						<p>Search results</p>
 						<div class="images_16_9">
-							<img class="kuva" src="images/perhossovellus_hakutulos.jpg" id="teipattu_kuva4_4" loading="lazy" alt="Butterfly app - search results" title="Perhossovellus - hakutulokset">
+							<img src="images/perhossovellus_hakutulos.jpg" class="teipattu_kuva4" loading="lazy" alt="Butterfly app - search results" title="Perhossovellus - hakutulokset">
 						</div>
 					</div>
 				</div>
@@ -243,22 +281,21 @@
 
 
 
-			<div class="alue" id="part7" data-bg="images/calculator_3D_main.jpg">
+			<div class="alue" id="part_calculator" data-bg="images/calculator_3D_main.jpg">
 				<div class="space_for_background"></div>
 				<h2 class="subtitle">3D graphics with a calculator</h2>
 				<div class="space_for_background"></div>
 				<div class="d-flex">
 					<div class="leftpane">
-						<h2>Images</h2>
 						<p>3D graphics running on Casio FX 1.0</p>
 						<div class="images_16_9">
-							<img class="kuva" src="images/calculator_3D_main.jpg" id="teipattu_kuva7_1" loading="lazy" alt="3D program running on a calculator" title="3D program running on a calculator">	
-							<img class="tehoste" src="images/teippi_16_9.png" id="teippi7_1" alt="tape to image corners" title=" ">
+							<img src="images/calculator_3D_main.jpg" class="teipattu_kuva1" loading="lazy" alt="3D program running on a calculator" title="3D program running on a calculator">	
+							<img src="images/teippi_16_9.png" class="teippi1" alt="tape to image corners" title=" ">
 						</div>
 						<p>Rotation around x-axis</p>
 						<div class="images_16_9">
-							<img class="kuva" src="images/rotate_x.jpg" id="teipattu_kuva7_2" loading="lazy" alt="3D program running on a calculator, x rotation" title="3D program running on a calculator, x rotation">
-							<img class="tehoste" src="images/teippi_16_9.png" id="teippi7_2" alt="tape to image corners" title=" ">
+							<img src="images/rotate_x.jpg" class="teipattu_kuva2" loading="lazy" alt="3D program running on a calculator, x rotation" title="3D program running on a calculator, x rotation">
+							<img src="images/teippi_16_9.png" class="teippi2" alt="tape to image corners" title=" ">
 						</div>
 					</div>
 
@@ -271,11 +308,10 @@
 					</div>
 
 					<div class="rightpane">
-						<h2>Images</h2>
 						<p>End of the program</p>
 						<div class="images_16_9">
-							<img class="kuva" src="images/program_end.jpg" id="teipattu_kuva7_3" loading="lazy" alt="3D program running on a calculator, end of the program" title="3D program running on a calculator, end of the program">
-							<img class="tehoste" src="images/teippi_16_9.png" id="teippi7_3" alt="tape to image corners" title=" ">
+							<img src="images/program_end.jpg" class="teipattu_kuva3" loading="lazy" alt="3D program running on a calculator, end of the program" title="3D program running on a calculator, end of the program">
+							<img src="images/teippi_16_9.png" class="teippi3" alt="tape to image corners" title=" ">
 						</div>
 						<p>Hyperlink to my code</p>
 						<a href="https://github.com/qettu/Calculator3DGraphics">github.com/qettu/Calculator3DGraphics</a>
@@ -285,7 +321,7 @@
 
 
 			
-			<div class="alue" id="part5" data-bg="images/gallerian_taustakuva.jpg">
+			<div class="alue" id="part_photographs" data-bg="images/gallerian_taustakuva.jpg">
 				<div class="space_for_background"></div>
 				<h2 class="subtitle">Nature photographs</h2>
 				<div class="space_for_background"></div>
@@ -338,7 +374,7 @@
 				</div>
 			</div>
 			
-			<div class="loppu_gradient"  id="part6"></div>
+			<div class="loppu_gradient"  id="part_contact_details"></div>
 			<div class="loppu">
 				<div class="loppu_content_holder">
 					<h3>Contact details</h3>
